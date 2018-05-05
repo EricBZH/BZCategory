@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Eric. All rights reserved.
 //
 
-#import "NSDictionary+UnicodeReadable.h"
+#import "NSDictionary+BZUnicodeReadable.h"
 
-@implementation NSDictionary (UnicodeReadable)
+@implementation NSDictionary (BZUnicodeReadable)
 
 #if DEBUG
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {

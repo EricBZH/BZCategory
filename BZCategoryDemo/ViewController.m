@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BZCategory.h"
 
 @interface ViewController ()
 

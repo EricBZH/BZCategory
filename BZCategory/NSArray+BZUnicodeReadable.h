@@ -1,5 +1,5 @@
 //
-//  NSDictionary+UnicodeReadable.h
+//  NSArray+UnicodeReadable.h
 //  BZCategory
 //
 //  Created by Eric on 2018/5/5.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (UnicodeReadable)
+@interface NSArray (BZUnicodeReadable)
 
 @end

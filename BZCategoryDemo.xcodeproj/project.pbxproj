@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8942F877209DAF460007E922 /* NSArray+UnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F875209DAF460007E922 /* NSArray+UnicodeReadable.h */; };
-		8942F878209DAF460007E922 /* NSArray+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F876209DAF460007E922 /* NSArray+UnicodeReadable.m */; };
-		8942F87B209DAF570007E922 /* NSDictionary+UnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F879209DAF570007E922 /* NSDictionary+UnicodeReadable.h */; };
-		8942F87C209DAF570007E922 /* NSDictionary+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F87A209DAF570007E922 /* NSDictionary+UnicodeReadable.m */; };
-		8942F87F209DAF660007E922 /* NSSet+UnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F87D209DAF660007E922 /* NSSet+UnicodeReadable.h */; };
-		8942F880209DAF660007E922 /* NSSet+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F87E209DAF660007E922 /* NSSet+UnicodeReadable.m */; };
+		8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8942F878209DAF460007E922 /* NSArray+BZUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */; };
+		8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8942F87C209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */; };
+		8942F87F209DAF660007E922 /* NSSet+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8942F880209DAF660007E922 /* NSSet+BZUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */; };
 		898D3ACF209D6373009A15D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 898D3ACE209D6373009A15D5 /* AppDelegate.m */; };
 		898D3AD2209D6373009A15D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898D3AD1209D6373009A15D5 /* ViewController.m */; };
 		898D3AD5209D6373009A15D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898D3AD3209D6373009A15D5 /* Main.storyboard */; };
@@ -81,12 +81,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8942F875209DAF460007E922 /* NSArray+UnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+UnicodeReadable.h"; sourceTree = "<group>"; };
-		8942F876209DAF460007E922 /* NSArray+UnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UnicodeReadable.m"; sourceTree = "<group>"; };
-		8942F879209DAF570007E922 /* NSDictionary+UnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+UnicodeReadable.h"; sourceTree = "<group>"; };
-		8942F87A209DAF570007E922 /* NSDictionary+UnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+UnicodeReadable.m"; sourceTree = "<group>"; };
-		8942F87D209DAF660007E922 /* NSSet+UnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet+UnicodeReadable.h"; sourceTree = "<group>"; };
-		8942F87E209DAF660007E922 /* NSSet+UnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSet+UnicodeReadable.m"; sourceTree = "<group>"; };
+		8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+BZUnicodeReadable.h"; sourceTree = "<group>"; };
+		8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BZUnicodeReadable.m"; sourceTree = "<group>"; };
+		8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BZUnicodeReadable.h"; sourceTree = "<group>"; };
+		8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BZUnicodeReadable.m"; sourceTree = "<group>"; };
+		8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet+BZUnicodeReadable.h"; sourceTree = "<group>"; };
+		8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSSet+BZUnicodeReadable.m"; sourceTree = "<group>"; };
 		898D3ACA209D6373009A15D5 /* BZCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		898D3ACD209D6373009A15D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		898D3ACE209D6373009A15D5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -214,12 +214,12 @@
 			isa = PBXGroup;
 			children = (
 				898D3B06209D638E009A15D5 /* BZCategory.h */,
-				8942F875209DAF460007E922 /* NSArray+UnicodeReadable.h */,
-				8942F876209DAF460007E922 /* NSArray+UnicodeReadable.m */,
-				8942F879209DAF570007E922 /* NSDictionary+UnicodeReadable.h */,
-				8942F87A209DAF570007E922 /* NSDictionary+UnicodeReadable.m */,
-				8942F87D209DAF660007E922 /* NSSet+UnicodeReadable.h */,
-				8942F87E209DAF660007E922 /* NSSet+UnicodeReadable.m */,
+				8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */,
+				8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */,
+				8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */,
+				8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */,
+				8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */,
+				8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */,
 				898D3B07209D638E009A15D5 /* Info.plist */,
 			);
 			path = BZCategory;
@@ -241,10 +241,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8942F87F209DAF660007E922 /* NSSet+UnicodeReadable.h in Headers */,
 				898D3B16209D638E009A15D5 /* BZCategory.h in Headers */,
-				8942F87B209DAF570007E922 /* NSDictionary+UnicodeReadable.h in Headers */,
-				8942F877209DAF460007E922 /* NSArray+UnicodeReadable.h in Headers */,
+				8942F87F209DAF660007E922 /* NSSet+BZUnicodeReadable.h in Headers */,
+				8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */,
+				8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +471,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8942F880209DAF660007E922 /* NSSet+UnicodeReadable.m in Sources */,
-				8942F87C209DAF570007E922 /* NSDictionary+UnicodeReadable.m in Sources */,
-				8942F878209DAF460007E922 /* NSArray+UnicodeReadable.m in Sources */,
+				8942F880209DAF660007E922 /* NSSet+BZUnicodeReadable.m in Sources */,
+				8942F87C209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m in Sources */,
+				8942F878209DAF460007E922 /* NSArray+BZUnicodeReadable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

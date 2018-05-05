@@ -1,14 +1,14 @@
 //
-//  NSSet+UnicodeReadable.m
+//  NSArray+UnicodeReadable.m
 //  BZCategory
 //
 //  Created by Eric on 2018/5/5.
 //  Copyright © 2018年 Eric. All rights reserved.
 //
 
-#import "NSSet+UnicodeReadable.h"
+#import "NSArray+BZUnicodeReadable.h"
 
-@implementation NSSet (UnicodeReadable)
+@implementation NSArray (BZUnicodeReadable)
 
 #if DEBUG
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
@@ -19,11 +19,11 @@
         [tabString appendString:@"\t"];
     }
     
-    NSString *tab = @"\t";
+    NSString *tab = @"";
     if (level > 0) {
         tab = tabString;
     }
-    [desc appendString:@"\t{(\n"];
+    [desc appendString:@"\t(\n"];
     
     for (id obj in self) {
         if ([obj isKindOfClass:[NSDictionary class]]
@@ -67,10 +67,11 @@
         }
     }
     
-    [desc appendFormat:@"%@)}", tab];
+    [desc appendFormat:@"%@)", tab];
     
     return desc;
 }
 #endif
+
 
 @end

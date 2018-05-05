@@ -14,6 +14,8 @@ FOUNDATION_EXPORT double BZCategoryVersionNumber;
 //! Project version string for BZCategory.
 FOUNDATION_EXPORT const unsigned char BZCategoryVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <BZCategory/PublicHeader.h>
+#import <BZCategory/NSArray+BZUnicodeReadable.h>
+#import <BZCategory/NSDictionary+BZUnicodeReadable.h>
+#import <BZCategory/NSSet+BZUnicodeReadable.h>
 
 
