@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */; };
+		07D3CF3220A3478800170186 /* NSUserDefaults+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */; };
+		07D3CF3520A3479500170186 /* NSData+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF3320A3479500170186 /* NSData+BZAdd.h */; };
+		07D3CF3620A3479500170186 /* NSData+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3420A3479500170186 /* NSData+BZAdd.m */; };
+		07D3CF3920A347A800170186 /* BZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3720A347A800170186 /* BZModel.m */; };
+		511228E5F278FC5F4084D46A /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */; };
 		8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8942F878209DAF460007E922 /* NSArray+BZUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */; };
 		8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +87,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+BZAdd.h"; sourceTree = "<group>"; };
+		07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+BZAdd.m"; sourceTree = "<group>"; };
+		07D3CF3320A3479500170186 /* NSData+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BZAdd.h"; sourceTree = "<group>"; };
+		07D3CF3420A3479500170186 /* NSData+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BZAdd.m"; sourceTree = "<group>"; };
+		07D3CF3720A347A800170186 /* BZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZModel.m; sourceTree = "<group>"; };
+		07D3CF3820A347A800170186 /* BZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZModel.h; sourceTree = "<group>"; };
+		503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZCategoryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+BZUnicodeReadable.h"; sourceTree = "<group>"; };
 		8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BZUnicodeReadable.m"; sourceTree = "<group>"; };
 		8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BZUnicodeReadable.h"; sourceTree = "<group>"; };
@@ -109,6 +122,8 @@
 		898D3B0C209D638E009A15D5 /* BZCategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZCategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		898D3B13209D638E009A15D5 /* BZCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZCategoryTests.m; sourceTree = "<group>"; };
 		898D3B15209D638E009A15D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4178D774059C1F06EA6AD5C /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C19599231A4CD83D5E569B /* Pods-BZCategoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				898D3B19209D638E009A15D5 /* BZCategory.framework in Frameworks */,
+				511228E5F278FC5F4084D46A /* libPods-BZCategoryDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +168,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D3CF2E20A3476F00170186 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */,
+				8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */,
+				8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */,
+				8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */,
+				8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */,
+				8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */,
+				07D3CF3320A3479500170186 /* NSData+BZAdd.h */,
+				07D3CF3420A3479500170186 /* NSData+BZAdd.m */,
+				07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */,
+				07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		6E43ACFF3D07E614DC96C21B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		898D3AC1209D6373009A15D5 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +202,8 @@
 				898D3B05209D638E009A15D5 /* BZCategory */,
 				898D3B12209D638E009A15D5 /* BZCategoryTests */,
 				898D3ACB209D6373009A15D5 /* Products */,
+				8CB86D7FD4635984255E156D /* Pods */,
+				6E43ACFF3D07E614DC96C21B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +226,8 @@
 				898D3ACE209D6373009A15D5 /* AppDelegate.m */,
 				898D3AD0209D6373009A15D5 /* ViewController.h */,
 				898D3AD1209D6373009A15D5 /* ViewController.m */,
+				07D3CF3820A347A800170186 /* BZModel.h */,
+				07D3CF3720A347A800170186 /* BZModel.m */,
 				898D3AD3209D6373009A15D5 /* Main.storyboard */,
 				898D3AD6209D6373009A15D5 /* Assets.xcassets */,
 				898D3AD8209D6373009A15D5 /* LaunchScreen.storyboard */,
@@ -214,12 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				898D3B06209D638E009A15D5 /* BZCategory.h */,
-				8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */,
-				8942F876209DAF460007E922 /* NSArray+BZUnicodeReadable.m */,
-				8942F879209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h */,
-				8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */,
-				8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */,
-				8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */,
+				07D3CF2E20A3476F00170186 /* Foundation */,
 				898D3B07209D638E009A15D5 /* Info.plist */,
 			);
 			path = BZCategory;
@@ -234,6 +274,15 @@
 			path = BZCategoryTests;
 			sourceTree = "<group>";
 		};
+		8CB86D7FD4635984255E156D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4178D774059C1F06EA6AD5C /* Pods-BZCategoryDemo.debug.xcconfig */,
+				A4C19599231A4CD83D5E569B /* Pods-BZCategoryDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -241,10 +290,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */,
 				898D3B16209D638E009A15D5 /* BZCategory.h in Headers */,
 				8942F87F209DAF660007E922 /* NSSet+BZUnicodeReadable.h in Headers */,
 				8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */,
 				8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */,
+				07D3CF3520A3479500170186 /* NSData+BZAdd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 898D3AF6209D6373009A15D5 /* Build configuration list for PBXNativeTarget "BZCategoryDemo" */;
 			buildPhases = (
+				5821D9683C3B9F7C3DBFB227 /* [CP] Check Pods Manifest.lock */,
 				898D3AC6209D6373009A15D5 /* Sources */,
 				898D3AC7209D6373009A15D5 /* Frameworks */,
 				898D3AC8209D6373009A15D5 /* Resources */,
@@ -440,12 +492,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5821D9683C3B9F7C3DBFB227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BZCategoryDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		898D3AC6209D6373009A15D5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				898D3AD2209D6373009A15D5 /* ViewController.m in Sources */,
+				07D3CF3920A347A800170186 /* BZModel.m in Sources */,
 				898D3ADD209D6373009A15D5 /* main.m in Sources */,
 				898D3ACF209D6373009A15D5 /* AppDelegate.m in Sources */,
 			);
@@ -471,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D3CF3620A3479500170186 /* NSData+BZAdd.m in Sources */,
 				8942F880209DAF660007E922 /* NSSet+BZUnicodeReadable.m in Sources */,
+				07D3CF3220A3478800170186 /* NSUserDefaults+BZAdd.m in Sources */,
 				8942F87C209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m in Sources */,
 				8942F878209DAF460007E922 /* NSArray+BZUnicodeReadable.m in Sources */,
 			);
@@ -641,6 +717,7 @@
 		};
 		898D3AF7209D6373009A15D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4178D774059C1F06EA6AD5C /* Pods-BZCategoryDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -656,6 +733,7 @@
 		};
 		898D3AF8209D6373009A15D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C19599231A4CD83D5E569B /* Pods-BZCategoryDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

@@ -36,4 +36,18 @@
     }];
 }
 
+- (void)testModel
+{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *key = @"key";
+    
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    [userDefault setObject:url forKey:key];
+    
+    NSURL *tempUrl = [userDefault objectForKey:key];
+    
+    NSLog(@"%@",url);
+    NSLog(@"%@",tempUrl);
+}
+
 @end
