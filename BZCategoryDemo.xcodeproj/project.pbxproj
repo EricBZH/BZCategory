@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */; };
 		07D3CF3220A3478800170186 /* NSUserDefaults+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */; };
-		07D3CF3520A3479500170186 /* NSData+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF3320A3479500170186 /* NSData+BZAdd.h */; };
-		07D3CF3620A3479500170186 /* NSData+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3420A3479500170186 /* NSData+BZAdd.m */; };
 		07D3CF3920A347A800170186 /* BZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3720A347A800170186 /* BZModel.m */; };
 		511228E5F278FC5F4084D46A /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */; };
 		8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8942F875209DAF460007E922 /* NSArray+BZUnicodeReadable.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -89,8 +87,6 @@
 /* Begin PBXFileReference section */
 		07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+BZAdd.h"; sourceTree = "<group>"; };
 		07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+BZAdd.m"; sourceTree = "<group>"; };
-		07D3CF3320A3479500170186 /* NSData+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BZAdd.h"; sourceTree = "<group>"; };
-		07D3CF3420A3479500170186 /* NSData+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BZAdd.m"; sourceTree = "<group>"; };
 		07D3CF3720A347A800170186 /* BZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZModel.m; sourceTree = "<group>"; };
 		07D3CF3820A347A800170186 /* BZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZModel.h; sourceTree = "<group>"; };
 		503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZCategoryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,8 +173,6 @@
 				8942F87A209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m */,
 				8942F87D209DAF660007E922 /* NSSet+BZUnicodeReadable.h */,
 				8942F87E209DAF660007E922 /* NSSet+BZUnicodeReadable.m */,
-				07D3CF3320A3479500170186 /* NSData+BZAdd.h */,
-				07D3CF3420A3479500170186 /* NSData+BZAdd.m */,
 				07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */,
 				07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */,
 			);
@@ -295,7 +289,6 @@
 				8942F87F209DAF660007E922 /* NSSet+BZUnicodeReadable.h in Headers */,
 				8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */,
 				8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */,
-				07D3CF3520A3479500170186 /* NSData+BZAdd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +538,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D3CF3620A3479500170186 /* NSData+BZAdd.m in Sources */,
 				8942F880209DAF660007E922 /* NSSet+BZUnicodeReadable.m in Sources */,
 				07D3CF3220A3478800170186 /* NSUserDefaults+BZAdd.m in Sources */,
 				8942F87C209DAF570007E922 /* NSDictionary+BZUnicodeReadable.m in Sources */,

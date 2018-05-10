@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "分类"
 
   s.description  = <<-DESC
-                   分类.
+                   集成常用的分类，方便开发使用。
                    DESC
 
   s.homepage     = "https://github.com/EricBZH/BZCategory"
@@ -19,5 +19,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = "BZCategory/*.{h,m}"
+  s.dependency   = "MJExtension"
 
 end

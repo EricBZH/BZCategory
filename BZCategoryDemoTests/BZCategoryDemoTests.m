@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "BZModel.h"
+#import "NSUserDefaults+BZAdd.h"
 
 @interface BZCategoryDemoTests : XCTestCase
 
@@ -37,17 +38,21 @@
     }];
 }
 
-- (void)testModel
+
+/**
+ 测试NSUserDefault存储自定义对象
+ */
+- (void)testSetCustomModel
 {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *key = @"key";
 
     BZModel *m1 = [[BZModel alloc]init];
     m1.name = @"张三";
-    
-    [userDefault setObject:m1 forKey:key];
-    
-    BZModel *m2 = [userDefault objectForKey:key];
+
+    [userDefault bz_SetCustomObject:m1 forKey:key];
+
+    BZModel *m2 = [userDefault bz_ObjectForKey:key];
     NSLog(@"%@",m2.name);
 }
 

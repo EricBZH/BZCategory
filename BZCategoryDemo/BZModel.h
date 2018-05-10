@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BZModel : NSObject<NSCoding,NSCopying>
+@interface BZModel : NSObject <NSCoding,NSCopying>
 
 @property (copy ,nonatomic) NSString *name;
 
