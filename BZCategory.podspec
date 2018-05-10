@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = "BZCategory/*.{h,m}"
-  s.dependency   = "MJExtension"
+  s.source_files = "BZCategory/*.{h,m}","BZCategory/Foundation/*.{h,m}"
+  s.dependency     "MJExtension"
 
 end
