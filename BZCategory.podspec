@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "分类"
 
   s.description  = <<-DESC
