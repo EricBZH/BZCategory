@@ -10,6 +10,6 @@
 
 @interface NSData (BZAdd)
 
-@property (copy, nonatomic) NSString *isCustomObject;//标记是否自定义对象
+@property (assign, nonatomic) BOOL isCustomObject;//标记是否自定义对象
 
 @end

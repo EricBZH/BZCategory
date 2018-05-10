@@ -11,17 +11,17 @@
 
 @implementation NSData (BZAdd)
 
-- (void)setIsCustomObject:(NSString*)isCustomObject
+
+- (void)setIsCustomObject:(BOOL)isCustomObject
 {
-//    NSNumber *isCustomObj = [NSNumber numberWithBool:isCustomObject];
-    return objc_setAssociatedObject(self, @selector(isCustomObject), isCustomObject, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    NSNumber *isCustomObj = [NSNumber numberWithBool:isCustomObject];
+    objc_setAssociatedObject(self, @selector(isCustomObject), isCustomObj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (NSString *)isCustomObject
+- (BOOL)isCustomObject
 {
-//    NSNumber *isCustomObj = objc_getAssociatedObject(self, _cmd);
-    NSString *is = objc_getAssociatedObject(self, _cmd);//[isCustomObj boolValue];
-    return is;
+    NSNumber *isCustomObj = objc_getAssociatedObject(self, @selector(isCustomObject));
+    return [isCustomObj boolValue];
 }
 
 @end

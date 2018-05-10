@@ -33,7 +33,7 @@
      *  而且self没有交换的方法实现，但是父类有这个方法，这样就会调用父类的方法，结果就不是我们想要的结果了。
      *  所以我们在这里通过class_addMethod()的验证，如果self实现了这个方法，class_addMethod()函数将会返回NO，我们就可以对其进行交换了。
      */
-    if (!class_addMethod([self class], @selector(bz_SetCustomObject:forKey:), method_getImplementation(toMethod2), method_getTypeEncoding(toMethod2))) {
+    if (!class_addMethod([self class], @selector(bz_ObjectForKey:), method_getImplementation(toMethod2), method_getTypeEncoding(toMethod2))) {
         method_exchangeImplementations(fromMethod2, toMethod2);
     }
 }
@@ -52,17 +52,17 @@
     [NSString class],
     [NSAttributedString class],
     [NSClassFromString(@"_NSInlineData") class],nil];
-    
+
     Class c = [value class];
     BOOL isFoundationObject = [userdefaultClasses containsObject:c];
-    
+
     if (isFoundationObject == NO) {
         NSData *customobjectData = [NSKeyedArchiver archivedDataWithRootObject:value];
-        customobjectData.isCustomObject = @"YES";
+        customobjectData.isCustomObject = YES;
         value = customobjectData;
     }
     [self bz_SetCustomObject:value forKey:defaultName];
-    
+
 }
 
 - (id)bz_ObjectForKey:(NSString *)defaultName
@@ -75,7 +75,7 @@
     BOOL b1 = [object isKindOfClass:[NSData class]];
     NSData *tempData = (NSData*)object;
     if (b1 == YES) {
-        BOOL b2 = [tempData.isCustomObject isEqualToString:@"YES"];
+        BOOL b2 = tempData.isCustomObject;
         if (b2 == YES) {
             object = [NSKeyedUnarchiver unarchiveObjectWithData:object];
         }

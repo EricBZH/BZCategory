@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "BZModel.h"
 
 @interface BZCategoryDemoTests : XCTestCase
 
@@ -40,14 +41,14 @@
 {
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *key = @"key";
+
+    BZModel *m1 = [[BZModel alloc]init];
+    m1.name = @"张三";
     
-    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
-    [userDefault setObject:url forKey:key];
+    [userDefault setObject:m1 forKey:key];
     
-    NSURL *tempUrl = [userDefault objectForKey:key];
-    
-    NSLog(@"%@",url);
-    NSLog(@"%@",tempUrl);
+    BZModel *m2 = [userDefault objectForKey:key];
+    NSLog(@"%@",m2.name);
 }
 
 @end
