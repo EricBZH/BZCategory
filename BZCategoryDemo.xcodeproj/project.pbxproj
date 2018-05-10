@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */; };
+		07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3CF2F20A3478800170186 /* NSUserDefaults+BZAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07D3CF3220A3478800170186 /* NSUserDefaults+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3020A3478800170186 /* NSUserDefaults+BZAdd.m */; };
 		07D3CF3920A347A800170186 /* BZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D3CF3720A347A800170186 /* BZModel.m */; };
 		511228E5F278FC5F4084D46A /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 503F6448C3CCF4B78A9D9502 /* libPods-BZCategoryDemo.a */; };
@@ -164,6 +164,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0726CA8620A4865000F85694 /* BZModel */ = {
+			isa = PBXGroup;
+			children = (
+				07D3CF3820A347A800170186 /* BZModel.h */,
+				07D3CF3720A347A800170186 /* BZModel.m */,
+			);
+			path = BZModel;
+			sourceTree = "<group>";
+		};
 		07D3CF2E20A3476F00170186 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +229,6 @@
 				898D3ACE209D6373009A15D5 /* AppDelegate.m */,
 				898D3AD0209D6373009A15D5 /* ViewController.h */,
 				898D3AD1209D6373009A15D5 /* ViewController.m */,
-				07D3CF3820A347A800170186 /* BZModel.h */,
-				07D3CF3720A347A800170186 /* BZModel.m */,
 				898D3AD3209D6373009A15D5 /* Main.storyboard */,
 				898D3AD6209D6373009A15D5 /* Assets.xcassets */,
 				898D3AD8209D6373009A15D5 /* LaunchScreen.storyboard */,
@@ -254,6 +261,7 @@
 			children = (
 				898D3B06209D638E009A15D5 /* BZCategory.h */,
 				07D3CF2E20A3476F00170186 /* Foundation */,
+				0726CA8620A4865000F85694 /* BZModel */,
 				898D3B07209D638E009A15D5 /* Info.plist */,
 			);
 			path = BZCategory;
@@ -284,10 +292,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */,
 				898D3B16209D638E009A15D5 /* BZCategory.h in Headers */,
 				8942F87F209DAF660007E922 /* NSSet+BZUnicodeReadable.h in Headers */,
 				8942F87B209DAF570007E922 /* NSDictionary+BZUnicodeReadable.h in Headers */,
+				07D3CF3120A3478800170186 /* NSUserDefaults+BZAdd.h in Headers */,
 				8942F877209DAF460007E922 /* NSArray+BZUnicodeReadable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

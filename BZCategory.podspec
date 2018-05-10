@@ -2,8 +2,8 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.0.4"
-  s.summary      = "分类"
+  s.version      = "1.0.5"
+  s.summary      = "集成常用的分类，方便开发使用"
 
   s.description  = <<-DESC
                    集成常用的分类，方便开发使用。
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = "BZCategory/*.{h,m}","BZCategory/Foundation/*.{h,m}"
+  s.source_files = "BZCategory/*.{h,m}","BZCategory/**/*.{h,m}"
   s.dependency     "MJExtension"
 
 end
