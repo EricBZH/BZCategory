@@ -1,35 +1,45 @@
 # BZCategory
 
-[![CI Status](https://img.shields.io/travis/EricBZH/BZCategory.svg?style=flat)](https://travis-ci.org/EricBZH/BZCategory)
 [![Version](https://img.shields.io/cocoapods/v/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
 [![License](https://img.shields.io/cocoapods/l/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
 [![Platform](https://img.shields.io/cocoapods/p/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
+[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 
-项目通用分类库。
+中文介绍
+==============
+项目通用分类库。<br/>
     
     现有功能：
         1.能直接打印字典，数组，集合内Unicode码内容。
         2.能直接通过NSUserDefault写入、读取自定义对象。
+        
+    准备加入功能：
+        1.安全字典、数组。
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+安装
+==============
 
-## Requirements
+### CocoaPods
 
-## Installation
-
-TZCityList is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+1. 在 Podfile 中添加  `pod 'BZCategory'`。
+2. 执行 `pod install` 或 `pod update`。
+3. 导入 "BZCategory.h"。
 
 ```ruby
 pod 'BZCategory'
 ```
 
-## Author
+### 手动安装
 
-EricBZH, eric__b@163.com
+1. 下载 BZCategory 文件夹内的所有内容。
+2. 将 BZCategory 内的源文件添加(拖放)到你的工程。
+3. 导入 "BZCategory.h"。
 
-## License
+作者
+==============
+EricBZH，eric__b@163.com
 
-BZCategory is available under the MIT license. See the LICENSE file for more info.
+许可证
+==============
+BZCategory 使用 MIT 许可证，详情见 LICENSE 文件。
