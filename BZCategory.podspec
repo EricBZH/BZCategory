@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.0.6"
+  s.version      = "1.0.7"
   s.summary      = "集成常用的分类，方便开发使用"
 
   s.description  = <<-DESC
@@ -18,18 +18,18 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
 
-  s.source_files = "BZCategory/*.{h,m}"
-  s.public_header_files = "BZCategory/BZCategory.h"
+  s.source_files = "BZCategoryDemo/BZCategory/*.{h,m}"
+  s.public_header_files = "BZCategoryDemo/BZCategory/BZCategory.h"
   s.dependency     "MJExtension"
 
   s.subspec 'Foundation' do |ss|
 
-    ss.source_files = "BZCategory/Foundation/*.{h,m}"
+    ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
   end
 
   s.subspec 'BZModel' do |ss|
 
-    ss.source_files = "BZCategory/BZModel/*.{h,m}"
+    ss.source_files = "BZCategoryDemo/BZCategory/BZModel/*.{h,m}"
   end
 
 end
