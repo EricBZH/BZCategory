@@ -387,16 +387,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AB531520AC04290011E967 /* main.m in Sources */,
+				89AB530720AC04290011E967 /* AppDelegate.m in Sources */,
+				89AB530A20AC04290011E967 /* ViewController.m in Sources */,
+				89AB534820AC04470011E967 /* BZModel.m in Sources */,
 				89AB534420AC04470011E967 /* NSArray+BZUnicodeReadable.m in Sources */,
 				898EEC1020AD865300C670C4 /* NSDictionary+BZAddSafe.m in Sources */,
-				89AB534820AC04470011E967 /* BZModel.m in Sources */,
 				898EEC0F20AD865300C670C4 /* NSArray+BZAddSafe.m in Sources */,
 				89AB534620AC04470011E967 /* NSSet+BZUnicodeReadable.m in Sources */,
-				89AB530A20AC04290011E967 /* ViewController.m in Sources */,
 				898EEC1220AD865300C670C4 /* NSMutableDictionary+BZAddSafe.m in Sources */,
-				89AB531520AC04290011E967 /* main.m in Sources */,
 				89AB534720AC04470011E967 /* NSUserDefaults+BZAdd.m in Sources */,
-				89AB530720AC04290011E967 /* AppDelegate.m in Sources */,
 				898EEC1120AD865300C670C4 /* NSMutableArray+BZAddSafe.m in Sources */,
 				89AB534520AC04470011E967 /* NSDictionary+BZUnicodeReadable.m in Sources */,
 				898EEC1320AD865300C670C4 /* NSObject+BZAddImpChange.m in Sources */,

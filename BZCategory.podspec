@@ -2,11 +2,11 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.0.7"
-  s.summary      = "集成常用的分类，方便开发使用"
+  s.version      = "1.0.8"
+  s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
-                   集成常用的分类，方便开发使用。
+                   项目通用分类库，方便开发使用。
                    DESC
 
   s.homepage     = "https://github.com/EricBZH/BZCategory"

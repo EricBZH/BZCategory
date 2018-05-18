@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double BZCategoryVersionNumber;
 //! Project version string for BZCategory.
 FOUNDATION_EXPORT const unsigned char BZCategoryVersionString[];
 
-#import <BZCategory/NSUserDefaults+BZAdd.h>
-
+#import "NSUserDefaults+BZAdd.h"
+#import "BZModel.h"
 

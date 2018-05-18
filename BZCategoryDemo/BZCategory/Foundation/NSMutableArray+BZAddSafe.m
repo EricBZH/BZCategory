@@ -12,7 +12,12 @@
 
 @implementation NSMutableArray (BZAddSafe)
 
+#ifdef DEBUG
+
+#else
+
 + (void)load{
+    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self swizzlingSysMethod:@"addObject:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_addObject:" targetClassString:@"NSMutableArray"];
@@ -28,9 +33,13 @@
         [self swizzlingSysMethod:@"removeObjectsInRange:" sysClassString:@"NSMutableArray" toCustMethod:@"bz_removeObjectsInRange:" targetClassString:@"NSMutableArray"];
         
         [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_objectAtIndex:" targetClassString:@"NSMutableArray"];
-
+        
     });
+    
 }
+
+#endif
+
 
 - (void)bz_addObject:(id)anObject{
     if (!anObject) {

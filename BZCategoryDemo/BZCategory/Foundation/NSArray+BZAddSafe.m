@@ -12,7 +12,12 @@
 
 @implementation NSArray (BZAddSafe)
 
+#ifdef DEBUG
+
+#else
+
 + (void)load{
+    
     static dispatch_once_t onceDispatch;
     dispatch_once(&onceDispatch, ^{
         [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArray0" toCustMethod:@"bz_objectAtIndex1:" targetClassString:@"NSArray"];
@@ -23,7 +28,11 @@
         
         [self swizzlingSysMethod:@"arrayByAddingObject:" sysClassString:@"__NSArrayI" toCustMethod:@"arrayByAddingObject_bz:" targetClassString:@"NSArray"];
     });
+    
 }
+
+#endif
+
 
 - (id)bz_objectAtIndex1:(NSUInteger)index{
     //判断数组是否越界

@@ -12,11 +12,19 @@
 
 @implementation NSDictionary (BZAddSafe)
 
+#ifdef DEBUG
+
+#else
+
 + (void)load{
+    
     [self swizzlingSysMethod:@"initWithObjects:forKeys:count:" sysClassString:@"__NSPlaceholderDictionary" toCustMethod:@"initWithObjects_bz:forKeys:count:" targetClassString:@"NSDictionary"];
+    
 }
 
--(instancetype)initWithObjects_bz:(id *)objects forKeys:(id<NSCopying> *)keys count:(NSUInteger)count {
+#endif
+
+- (instancetype)initWithObjects_bz:(id *)objects forKeys:(id<NSCopying> *)keys count:(NSUInteger)count {
     NSUInteger rightCount = 0;
     for (NSUInteger i = 0; i < count; i++) {
         if (!(keys[i] && objects[i])) {

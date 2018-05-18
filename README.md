@@ -3,18 +3,19 @@
 [![Version](https://img.shields.io/cocoapods/v/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
 [![License](https://img.shields.io/cocoapods/l/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
 [![Platform](https://img.shields.io/cocoapods/p/BZCategory.svg?style=flat)](https://cocoapods.org/pods/BZCategory)
-[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
+[![Support](https://img.shields.io/badge/support-iOS%208%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)
 
 中文介绍
 ==============
-项目通用分类库。<br/>
+项目通用分类库。
     
     现有功能：
         1.能直接打印字典，数组，集合内Unicode码内容。
         2.能直接通过NSUserDefault写入、读取自定义对象。
+        3.安全字典、数组，避免空值或者越界导致崩溃。（在debug模式下不生效，在Release模式下才生效）。
         
     准备加入功能：
-        1.安全字典、数组。
+        1...
 
 
 安装

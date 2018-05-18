@@ -7,8 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "BZModel.h"
-#import "NSUserDefaults+BZAdd.h"
+#import "BZCategory.h"
 
 @interface BZCategoryDemoTests : XCTestCase
 
@@ -75,8 +74,8 @@
 {
     NSString *valueString = nil;
     
-    NSMutableDictionary *dict2 = [NSMutableDictionary dictionary];
-    [dict2 setObject:valueString forKey:@"key"];
+    NSMutableDictionary *dict1 = [NSMutableDictionary dictionary];
+    [dict1 setObject:valueString forKey:@"key"];
 }
 
 /**
