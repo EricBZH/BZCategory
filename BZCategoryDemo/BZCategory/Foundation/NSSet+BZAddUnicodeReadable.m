@@ -1,14 +1,14 @@
 //
-//  NSSet+UnicodeReadable.m
-//  BZCategory
+//  NSSet+BZAddUnicodeReadable.m
+//  BZCategoryDemo
 //
-//  Created by Eric on 2018/5/5.
+//  Created by Eric on 2018/6/26.
 //  Copyright © 2018年 Eric. All rights reserved.
 //
 
-#import "NSSet+BZUnicodeReadable.h"
+#import "NSSet+BZAddUnicodeReadable.h"
 
-@implementation NSSet (BZUnicodeReadable)
+@implementation NSSet (BZAddUnicodeReadable)
 
 #if DEBUG
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
