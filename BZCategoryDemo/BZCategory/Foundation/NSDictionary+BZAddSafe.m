@@ -12,9 +12,9 @@
 
 @implementation NSDictionary (BZAddSafe)
 
-#ifdef DEBUG
-
-#else
+//#ifdef DEBUG
+//
+//#else
 
 + (void)load{
     
@@ -22,7 +22,7 @@
     
 }
 
-#endif
+//#endif
 
 - (instancetype)initWithObjects_bz:(id *)objects forKeys:(id<NSCopying> *)keys count:(NSUInteger)count {
     NSUInteger rightCount = 0;

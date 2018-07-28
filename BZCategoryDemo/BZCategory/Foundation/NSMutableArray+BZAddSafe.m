@@ -12,9 +12,9 @@
 
 @implementation NSMutableArray (BZAddSafe)
 
-#ifdef DEBUG
-
-#else
+//#ifdef DEBUG
+//
+//#else
 
 + (void)load{
     
@@ -38,7 +38,7 @@
     
 }
 
-#endif
+//#endif
 
 
 - (void)bz_addObject:(id)anObject{
