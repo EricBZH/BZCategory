@@ -11,5 +11,6 @@
 
 #import "NSUserDefaults+BZAdd.h"
 #import "BZModel.h"
+#import "NSString+BZAddRegex.h"
 
 #endif /* BZCategory_h */

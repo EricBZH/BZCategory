@@ -12,9 +12,9 @@
 
 @implementation NSMutableDictionary (BZAddSafe)
 
-//#ifdef DEBUG
-//
-//#else
+#ifdef DEBUG
+
+#else
 
 + (void)load{
     
@@ -26,9 +26,7 @@
     
 }
 
-//#endif
-
-
+#endif
 
 - (void)bz_removeObjectForKey:(id)key {
     if (!key) {

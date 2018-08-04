@@ -25,6 +25,27 @@
     
 }
 
+#pragma mark - 测试NSUserDefault存储自定义对象
+/**
+ 测试NSUserDefault存储自定义对象
+ */
+- (void)testSetCustomModel
+{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSString *key = @"key";
+    
+    BZModel *m1 = [[BZModel alloc]init];
+    m1.name = @"张三";
+    
+    //通过NSUserDefaults写入自定义类型对象到本地
+    [userDefault bz_SetObject:m1 forKey:key];
+    
+    //通过NSUserDefaults从本地取出自定义类型对象
+    BZModel *m2 = [userDefault bz_ObjectForKey:key];
+    NSLog(@"%@",m2.name);
+}
+
+#pragma mark - 测试安全数组、字典
 /**
  测试安全数组、字典
  */
@@ -59,26 +80,6 @@
     [self testArrayOutOfBounds];
     
     [self testMutableArrayOutOfBounds];
-}
-
-#pragma mark - 具体测试Demo
-/**
- 测试NSUserDefault存储自定义对象
- */
-- (void)testSetCustomModel
-{
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    NSString *key = @"key";
-    
-    BZModel *m1 = [[BZModel alloc]init];
-    m1.name = @"张三";
-    
-    //通过NSUserDefaults写入自定义类型对象到本地
-    [userDefault bz_SetObject:m1 forKey:key];
-    
-    //通过NSUserDefaults从本地取出自定义类型对象
-    BZModel *m2 = [userDefault bz_ObjectForKey:key];
-    NSLog(@"%@",m2.name);
 }
 
 /**

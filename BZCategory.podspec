@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -24,7 +24,25 @@ Pod::Spec.new do |s|
 
   s.subspec 'Foundation' do |ss|
 
-    ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
+    # ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
+
+    ss.subspec 'NSUserDefaults' do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
+
+      end
+    ss.subspec 'Regex' do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
+
+      end
+    ss.subspec 'Safe' do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Safe/*.{h,m}"
+
+      end
+    ss.subspec 'UnicodeReadable' do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
+
+      end
+
   end
 
   s.subspec 'BZModel' do |ss|

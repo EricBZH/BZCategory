@@ -12,9 +12,9 @@
 
 @implementation NSArray (BZAddSafe)
 
-//#ifdef DEBUG
-//
-//#else
+#ifdef DEBUG
+
+#else
 
 + (void)load{
     
@@ -31,7 +31,7 @@
     
 }
 
-//#endif
+#endif
 
 
 - (id)bz_objectAtIndex1:(NSUInteger)index{
