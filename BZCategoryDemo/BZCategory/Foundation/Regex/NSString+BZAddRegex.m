@@ -15,7 +15,7 @@
 /**
  邮箱验证
  */
-- (BOOL)isValidEmail
+- (BOOL)bz_IsValidEmail
 {
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
@@ -25,7 +25,7 @@
 /**
  手机号验证
  */
-- (BOOL)isValidPhoneNum
+- (BOOL)bz_IsValidPhoneNum
 {
     //手机号以13， 15，18开头，八个 \d 数字字符
     NSString *phoneRegex = @"^((13[0-9])|(147)|(15[^4,\\D])|(17[0-9])|(18[0,0-9]))\\d{8}$";
@@ -36,7 +36,7 @@
 /**
  车牌号验证
  */
-- (BOOL)isValidCarNo
+- (BOOL)bz_IsValidCarNo
 {
     NSString *carRegex = @"^[A-Za-z]{1}[A-Za-z_0-9]{5}$";
     NSPredicate *carTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",carRegex];
@@ -46,7 +46,7 @@
 /**
  网址验证
  */
-- (BOOL)isValidUrl
+- (BOOL)bz_IsValidUrl
 {
     NSString *regex = @"^((http)|(https))+:[^\\s]+\\.[^\\s]*$";
     return [self isValidateWithRegex:regex];
@@ -55,7 +55,7 @@
 /**
  邮政编码验证
  */
-- (BOOL)isValidPostalcode
+- (BOOL)bz_IsValidPostalcode
 {
     NSString *phoneRegex = @"^[0-8]\\d{5}(?!\\d)$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
@@ -65,7 +65,7 @@
 /**
  纯汉字验证
  */
-- (BOOL)isValidChinese
+- (BOOL)bz_IsValidChinese
 {
     NSString *phoneRegex = @"^[\u4e00-\u9fa5]+$";
     NSPredicate *phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
@@ -75,7 +75,7 @@
 /**
  IP格式验证，xxx.xxx.xxx.xxx
  */
-- (BOOL)isValidIP
+- (BOOL)bz_IsValidIP
 {
     NSString *regex = [NSString stringWithFormat:@"^(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})$"];
     NSPredicate *pre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
@@ -101,7 +101,7 @@
 /**
  身份证验证
  */
-- (BOOL)isValidIdCardNum
+- (BOOL)bz_IsValidIdCardNum
 {
     NSString *value = [self copy];
     value = [value stringByReplacingOccurrencesOfString:@"X" withString:@"x"];
@@ -179,7 +179,7 @@
 /**
  工商税号验证
  */
-- (BOOL)isValidTaxNo
+- (BOOL)bz_IsValidTaxNo
 {
     NSString *emailRegex = @"[0-9]\\d{13}([0-9]|X)$";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
@@ -194,7 +194,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    验证成功返回YES, 否则返回NO
  */
-- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
         firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
@@ -218,7 +218,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    正则验证成功返回YES, 否则返回NO
  */
-- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
               containDigtal:(BOOL)containDigtal
@@ -242,7 +242,7 @@
 /**
  去掉两端空格和换行符
  */
-- (NSString *)stringByTrimmingBlank
+- (NSString *)bz_StringByTrimmingBlank
 {
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
@@ -250,7 +250,7 @@
 /**
  去掉html格式
  */
-- (NSString *)removeHtmlFormat;
+- (NSString *)bz_RemoveHtmlFormat;
 {
     NSString *str = [NSString stringWithFormat:@"%@", self];
     

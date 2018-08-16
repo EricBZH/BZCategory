@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -20,34 +20,40 @@ Pod::Spec.new do |s|
 
   s.source_files = "BZCategoryDemo/BZCategory/*.{h,m}"
   s.public_header_files = "BZCategoryDemo/BZCategory/BZCategory.h"
+
   s.dependency     "MJExtension"
+  s.dependency     "YYModel"
+
+  s.subspec 'BZModel'  do |ss|
+    ss.source_files = "BZCategoryDemo/BZCategory/BZModel/*.{h,m}"
+  end
 
   s.subspec 'Foundation' do |ss|
 
     # ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
 
-    ss.subspec 'NSUserDefaults' do |sss|
+    ss.subspec 'NSArray'    do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
+      end
+
+    ss.subspec 'NSUserDefaults'  do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
-
       end
-    ss.subspec 'Regex' do |sss|
+
+    ss.subspec 'Regex'           do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
-
       end
-    ss.subspec 'Safe' do |sss|
+
+    ss.subspec 'Safe'            do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Safe/*.{h,m}"
-
       end
+
     ss.subspec 'UnicodeReadable' do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
-
       end
 
   end
 
-  s.subspec 'BZModel' do |ss|
-
-    ss.source_files = "BZCategoryDemo/BZCategory/BZModel/*.{h,m}"
-  end
+  
 
 end

@@ -9,8 +9,9 @@
 #ifndef BZCategory_h
 #define BZCategory_h
 
-#import "NSUserDefaults+BZAdd.h"
 #import "BZModel.h"
+#import "NSUserDefaults+BZAdd.h"
 #import "NSString+BZAddRegex.h"
+#import "NSArray+BZAdd.h"
 
 #endif /* BZCategory_h */

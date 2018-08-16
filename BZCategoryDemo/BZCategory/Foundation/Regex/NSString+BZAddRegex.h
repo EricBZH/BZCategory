@@ -15,47 +15,47 @@
 /**
  邮箱验证
  */
-- (BOOL)isValidEmail;
+- (BOOL)bz_IsValidEmail;
 
 /**
  手机号验证
  */
-- (BOOL)isValidPhoneNum;
+- (BOOL)bz_IsValidPhoneNum;
 
 /**
  车牌号验证
  */
-- (BOOL)isValidCarNo;
+- (BOOL)bz_IsValidCarNo;
 
 /**
  网址验证
  */
-- (BOOL)isValidUrl;
+- (BOOL)bz_IsValidUrl;
 
 /**
  邮政编码验证
  */
-- (BOOL)isValidPostalcode;
+- (BOOL)bz_IsValidPostalcode;
 
 /**
  纯汉字验证
  */
-- (BOOL)isValidChinese;
+- (BOOL)bz_IsValidChinese;
 
 /**
  IP格式验证，xxx.xxx.xxx.xxx
  */
-- (BOOL)isValidIP;
+- (BOOL)bz_IsValidIP;
 
 /**
  身份证验证
  */
-- (BOOL)isValidIdCardNum;
+- (BOOL)bz_IsValidIdCardNum;
 
 /**
  工商税号验证
  */
-- (BOOL)isValidTaxNo;
+- (BOOL)bz_IsValidTaxNo;
 
 /**
  @brief     是否符合最小长度、最长长度，是否包含中文,首字母是否可以为数字
@@ -65,7 +65,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    验证成功返回YES, 否则返回NO
  */
-- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
         firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
@@ -81,7 +81,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    正则验证成功返回YES, 否则返回NO
  */
-- (BOOL)isValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
               containDigtal:(BOOL)containDigtal
@@ -94,11 +94,11 @@
 /**
  去掉两端空格和换行符
  */
-- (NSString *)stringByTrimmingBlank;
+- (NSString *)bz_StringByTrimmingBlank;
 
 /**
  去掉html格式
  */
-- (NSString *)removeHtmlFormat;
+- (NSString *)bz_RemoveHtmlFormat;
 
 @end

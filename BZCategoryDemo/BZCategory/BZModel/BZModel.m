@@ -8,9 +8,22 @@
 
 #import "BZModel.h"
 #import "MJExtension.h"
+#import "YYModel.h"
 
 @implementation BZModel
 
 MJExtensionCodingImplementation
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    NSDictionary *json = [self yy_modelToJSONObject];
+    
+    if (json == nil) {
+        return [[self class] allocWithZone:zone];
+    }
+    
+    id obj = [[self class] yy_modelWithJSON:json];
+    return obj;
+}
 
 @end

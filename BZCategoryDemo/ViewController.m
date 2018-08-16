@@ -19,10 +19,11 @@
 {
     [super viewDidLoad];
     
-    [self testSetCustomModel];
+//    [self testSetCustomModel];
+//
+//    [self testSafe];
     
-    [self testSafe];
-    
+    [self testArrayToDict];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
@@ -161,5 +162,40 @@
     
     //可变数组放入空值
     [mutabArrayNil addObject:valueString];
+}
+
+#pragma mark - 测试数组模型转字典
+/**
+ 测试数组模型转字典
+ */
+- (void)testArrayToDict
+{
+    BZModel *m1 = [[BZModel alloc] init];
+    m1.name = @"张1";
+    m1.index = 1;
+
+    BZModel *m2 = [[BZModel alloc] init];
+    m2.name = @"张2";
+    m2.index = 2;
+
+    BZModel *m3 = [[BZModel alloc] init];
+    m3.name = @"张3";
+    m3.index = 3;
+
+    NSArray<BZModel*> *arr = @[m1,m2,m3];
+
+    NSMutableArray<BZModel*> *mArr = [[NSMutableArray alloc] initWithArray:arr];
+
+    NSDictionary <BZModel *,BZModel *>*arrDict = [arr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(BZModel *value) {
+        return value;
+    }];
+
+    NSDictionary <NSNumber *,BZModel *>*mArrDict = [mArr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(BZModel *value) {
+        return value.name;
+    }];
+
+    NSLog(@"%@",arrDict);
+    NSLog(@"%@",mArrDict);
+
 }
 @end
