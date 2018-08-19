@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.2"
+  s.version      = "1.1.3"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -21,12 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = "BZCategoryDemo/BZCategory/*.{h,m}"
   s.public_header_files = "BZCategoryDemo/BZCategory/BZCategory.h"
 
-  s.dependency     "MJExtension"
-  s.dependency     "YYModel"
-
-  s.subspec 'BZModel'  do |ss|
-    ss.source_files = "BZCategoryDemo/BZCategory/BZModel/*.{h,m}"
-  end
+  s.dependency     "BZModel"
 
   s.subspec 'Foundation' do |ss|
 

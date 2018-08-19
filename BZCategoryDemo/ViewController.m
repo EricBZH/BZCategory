@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BZCategory.h"
+#import "TestModel.h"
 
 @interface ViewController ()
 
@@ -35,14 +36,14 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *key = @"key";
     
-    BZModel *m1 = [[BZModel alloc]init];
+    TestModel *m1 = [[TestModel alloc]init];
     m1.name = @"张三";
     
     //通过NSUserDefaults写入自定义类型对象到本地
     [userDefault bz_SetObject:m1 forKey:key];
     
     //通过NSUserDefaults从本地取出自定义类型对象
-    BZModel *m2 = [userDefault bz_ObjectForKey:key];
+    TestModel *m2 = [userDefault bz_ObjectForKey:key];
     NSLog(@"%@",m2.name);
 }
 
@@ -170,27 +171,27 @@
  */
 - (void)testArrayToDict
 {
-    BZModel *m1 = [[BZModel alloc] init];
+    TestModel *m1 = [[TestModel alloc] init];
     m1.name = @"张1";
     m1.index = 1;
 
-    BZModel *m2 = [[BZModel alloc] init];
+    TestModel *m2 = [[TestModel alloc] init];
     m2.name = @"张2";
     m2.index = 2;
 
-    BZModel *m3 = [[BZModel alloc] init];
+    TestModel *m3 = [[TestModel alloc] init];
     m3.name = @"张3";
     m3.index = 3;
 
-    NSArray<BZModel*> *arr = @[m1,m2,m3];
+    NSArray<TestModel*> *arr = @[m1,m2,m3];
 
-    NSMutableArray<BZModel*> *mArr = [[NSMutableArray alloc] initWithArray:arr];
+    NSMutableArray<TestModel*> *mArr = [[NSMutableArray alloc] initWithArray:arr];
 
-    NSDictionary <BZModel *,BZModel *>*arrDict = [arr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(BZModel *value) {
+    NSDictionary <TestModel *,TestModel *>*arrDict = [arr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
         return value;
     }];
 
-    NSDictionary <NSNumber *,BZModel *>*mArrDict = [mArr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(BZModel *value) {
+    NSDictionary <NSNumber *,TestModel *>*mArrDict = [mArr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
         return value.name;
     }];
 

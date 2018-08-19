@@ -26,4 +26,9 @@ MJExtensionCodingImplementation
     return obj;
 }
 
+- (NSString *)description
+{
+    return [self yy_modelDescription];
+}
+
 @end

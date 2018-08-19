@@ -10,8 +10,4 @@
 
 @interface BZModel : NSObject <NSCoding,NSCopying>
 
-@property (copy   ,nonatomic) NSString *name;
-
-@property (assign, nonatomic) NSInteger index;
-
 @end

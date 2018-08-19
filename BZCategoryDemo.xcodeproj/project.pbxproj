@@ -24,7 +24,7 @@
 		076E4BB0210C2F7400EC857B /* NSDictionary+BZAddSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA0210C2F7400EC857B /* NSDictionary+BZAddSafe.m */; };
 		076E4BB1210C2F7400EC857B /* NSSet+BZAddUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA1210C2F7400EC857B /* NSSet+BZAddUnicodeReadable.m */; };
 		076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA2210C2F7400EC857B /* NSObject+BZAddImpChange.m */; };
-		076E4BB3210C2F7400EC857B /* BZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA8210C2F7400EC857B /* BZModel.m */; };
+		07CA59D621291B50009EA5B2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA59D521291B50009EA5B2 /* TestModel.m */; };
 		07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */; };
 		40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */; };
 		5471F873769CDCC7D286D419 /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B224736E8383B6BD6CBF6F0C /* libPods-BZCategoryDemo.a */; };
@@ -83,8 +83,8 @@
 		076E4BA2210C2F7400EC857B /* NSObject+BZAddImpChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BZAddImpChange.m"; sourceTree = "<group>"; };
 		076E4BA3210C2F7400EC857B /* NSMutableDictionary+BZAddSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+BZAddSafe.h"; sourceTree = "<group>"; };
 		076E4BA4210C2F7400EC857B /* NSUserDefaults+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+BZAdd.h"; sourceTree = "<group>"; };
-		076E4BA7210C2F7400EC857B /* BZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZModel.h; sourceTree = "<group>"; };
-		076E4BA8210C2F7400EC857B /* BZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZModel.m; sourceTree = "<group>"; };
+		07CA59D421291B50009EA5B2 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		07CA59D521291B50009EA5B2 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAddRegex.m"; sourceTree = "<group>"; };
 		07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAddRegex.h"; sourceTree = "<group>"; };
 		22DB8A87CDE65F26C796D67D /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +161,8 @@
 				076E4B5E210C2F3E00EC857B /* AppDelegate.m */,
 				076E4B60210C2F3E00EC857B /* ViewController.h */,
 				076E4B61210C2F3E00EC857B /* ViewController.m */,
+				07CA59D421291B50009EA5B2 /* TestModel.h */,
+				07CA59D521291B50009EA5B2 /* TestModel.m */,
 				0715F62C210C306B00797E81 /* Resource */,
 				076E4B8F210C2F7400EC857B /* BZCategory */,
 			);
@@ -190,7 +192,6 @@
 			children = (
 				0715F633210C318D00797E81 /* BZCategory.h */,
 				076E4B91210C2F7400EC857B /* Foundation */,
-				076E4BA6210C2F7400EC857B /* BZModel */,
 			);
 			path = BZCategory;
 			sourceTree = "<group>";
@@ -205,15 +206,6 @@
 				07E5D6832115B6E900BFC9AE /* UnicodeReadable */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		076E4BA6210C2F7400EC857B /* BZModel */ = {
-			isa = PBXGroup;
-			children = (
-				076E4BA7210C2F7400EC857B /* BZModel.h */,
-				076E4BA8210C2F7400EC857B /* BZModel.m */,
-			);
-			path = BZModel;
 			sourceTree = "<group>";
 		};
 		07E5D6832115B6E900BFC9AE /* UnicodeReadable */ = {
@@ -449,7 +441,7 @@
 				076E4BA9210C2F7400EC857B /* NSArray+BZAddSafe.m in Sources */,
 				07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */,
 				076E4BAA210C2F7400EC857B /* NSMutableDictionary+BZAddSafe.m in Sources */,
-				076E4BB3210C2F7400EC857B /* BZModel.m in Sources */,
+				07CA59D621291B50009EA5B2 /* TestModel.m in Sources */,
 				076E4BAF210C2F7400EC857B /* NSDictionary+BZAddUnicodeReadable.m in Sources */,
 				076E4BAC210C2F7400EC857B /* NSUserDefaults+BZAdd.m in Sources */,
 				40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */,
@@ -562,7 +554,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -614,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
