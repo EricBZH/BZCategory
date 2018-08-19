@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source_files = "BZCategoryDemo/BZCategory/*.{h,m}"
   s.public_header_files = "BZCategoryDemo/BZCategory/BZCategory.h"
 
-  s.dependency     "BZModel"
+  # s.dependency     "BZModel"
 
   s.subspec 'Foundation' do |ss|
 
