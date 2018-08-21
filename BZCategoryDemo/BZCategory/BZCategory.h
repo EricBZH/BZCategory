@@ -12,5 +12,6 @@
 #import "NSUserDefaults+BZAdd.h"
 #import "NSString+BZAddRegex.h"
 #import "NSArray+BZAdd.h"
+#import "UITextField+BZAdd.h"
 
 #endif /* BZCategory_h */
