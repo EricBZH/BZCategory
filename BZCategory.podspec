@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
     # ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
 
-    ss.subspec 'NSArray'    do |sss|
+    ss.subspec 'NSArray'         do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
       end
 
@@ -45,6 +45,10 @@ Pod::Spec.new do |s|
 
     ss.subspec 'UnicodeReadable' do |sss|
       sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
+      end
+
+    ss.subspec 'UITextField'     do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UITextField/*.{h,m}"
       end
 
   end

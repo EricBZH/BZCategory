@@ -26,6 +26,7 @@
 		076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA2210C2F7400EC857B /* NSObject+BZAddImpChange.m */; };
 		07CA59D621291B50009EA5B2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA59D521291B50009EA5B2 /* TestModel.m */; };
 		07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */; };
+		40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40341E41212C236100820D1B /* UITextField+BZAdd.m */; };
 		40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */; };
 		5471F873769CDCC7D286D419 /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B224736E8383B6BD6CBF6F0C /* libPods-BZCategoryDemo.a */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,8 @@
 		07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAddRegex.m"; sourceTree = "<group>"; };
 		07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAddRegex.h"; sourceTree = "<group>"; };
 		22DB8A87CDE65F26C796D67D /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		40341E40212C236100820D1B /* UITextField+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BZAdd.h"; sourceTree = "<group>"; };
+		40341E41212C236100820D1B /* UITextField+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BZAdd.m"; sourceTree = "<group>"; };
 		40A0E75A212536CE005AFFF5 /* NSArray+BZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+BZAdd.h"; sourceTree = "<group>"; };
 		40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BZAdd.m"; sourceTree = "<group>"; };
 		B224736E8383B6BD6CBF6F0C /* libPods-BZCategoryDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZCategoryDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +207,7 @@
 				07E5D6852115B7C200BFC9AE /* Regex */,
 				07E5D6842115B78200BFC9AE /* Safe */,
 				07E5D6832115B6E900BFC9AE /* UnicodeReadable */,
+				40341E43212C236700820D1B /* UITextField */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -263,6 +267,15 @@
 				B7FA4116C03E49BD6FCFBBFE /* Pods-BZCategoryDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		40341E43212C236700820D1B /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				40341E40212C236100820D1B /* UITextField+BZAdd.h */,
+				40341E41212C236100820D1B /* UITextField+BZAdd.m */,
+			);
+			path = UITextField;
 			sourceTree = "<group>";
 		};
 		40A0E756212535D4005AFFF5 /* NSArray */ = {
@@ -439,6 +452,7 @@
 				076E4B62210C2F3E00EC857B /* ViewController.m in Sources */,
 				076E4BB0210C2F7400EC857B /* NSDictionary+BZAddSafe.m in Sources */,
 				076E4BA9210C2F7400EC857B /* NSArray+BZAddSafe.m in Sources */,
+				40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */,
 				07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */,
 				076E4BAA210C2F7400EC857B /* NSMutableDictionary+BZAddSafe.m in Sources */,
 				07CA59D621291B50009EA5B2 /* TestModel.m in Sources */,
