@@ -151,9 +151,9 @@
  @param btn 按钮
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithButton:(UIButton *)btn withCallBack:(UITextFieldBZAddCallBack)callBack
+- (void)bz_addRightViewWithButton:(UIButton *)btn callBack:(UITextFieldBZAddCallBack)callBack
 {
-    [self bz_addRightViewWithButton:btn andZoom:DefaultZoom withCallBack:callBack];
+    [self bz_addRightViewWithButton:btn andZoom:DefaultZoom callBack:callBack];
 }
 
 /**
@@ -163,7 +163,7 @@
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithButton:(UIButton *)btn andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack
+- (void)bz_addRightViewWithButton:(UIButton *)btn andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack
 {
     [self addRightViewWithButton:btn andZoom:zoom];
     
@@ -180,9 +180,9 @@
  @param imageName 图片名称
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithImageName:(NSString *)imageName withCallBack:(UITextFieldBZAddCallBack)callBack
+- (void)bz_addRightViewWithImageName:(NSString *)imageName callBack:(UITextFieldBZAddCallBack)callBack
 {
-    [self bz_addRightViewWithImageName:imageName andZoom:DefaultZoom withCallBack:callBack];
+    [self bz_addRightViewWithImageName:imageName andZoom:DefaultZoom callBack:callBack];
 }
 
 /**
@@ -192,12 +192,12 @@
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithImageName:(NSString *)imageName andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack
+- (void)bz_addRightViewWithImageName:(NSString *)imageName andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack
 {
     UIButton *btn = [[UIButton alloc] init];
     [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
 
-    [self bz_addRightViewWithButton:btn andZoom:zoom withCallBack:callBack];
+    [self bz_addRightViewWithButton:btn andZoom:zoom callBack:callBack];
 }
 
 /**
@@ -207,13 +207,13 @@
  @param selectedImageName 选中状态图片名称
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName withCallBack:(UITextFieldBZAddCallBack)callBack
+- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName callBack:(UITextFieldBZAddCallBack)callBack
 {
     UIButton *btn = [[UIButton alloc] init];
     [btn setImage:[UIImage imageNamed:normalImageName] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:selectedImageName] forState:UIControlStateSelected];
     
-    [self bz_addRightViewWithButton:btn andZoom:DefaultZoom withCallBack:callBack];
+    [self bz_addRightViewWithButton:btn andZoom:DefaultZoom callBack:callBack];
 }
 
 /**
@@ -224,13 +224,13 @@
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack;
 {
     UIButton *btn = [[UIButton alloc] init];
     [btn setImage:[UIImage imageNamed:normalImageName] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:selectedImageName] forState:UIControlStateSelected];
     
-    [self bz_addRightViewWithButton:btn andZoom:zoom withCallBack:callBack];
+    [self bz_addRightViewWithButton:btn andZoom:zoom callBack:callBack];
 }
 
 #pragma mark - 私有方法
@@ -272,8 +272,6 @@
         btnFrame = CGRectMake(0, 0, WH, WH);
         btn.frame = btnFrame;
     }
-    
-    NSLog(@"%@",NSStringFromCGRect(btn.frame));
     
     CGFloat btnW = btn.frame.size.width;
     CGFloat btnH = btn.frame.size.height;

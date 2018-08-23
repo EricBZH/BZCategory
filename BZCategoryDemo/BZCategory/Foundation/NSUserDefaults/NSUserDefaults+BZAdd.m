@@ -17,7 +17,7 @@
  @param value 自定义对象
  @param defaultName key
  */
-- (void)bz_SetObject:(id)value forKey:(NSString *)defaultName
+- (void)bz_SetObject:(id<NSCoding>)value forKey:(NSString *)defaultName
 {
     NSData *customObjectData = [NSKeyedArchiver archivedDataWithRootObject:value];
 

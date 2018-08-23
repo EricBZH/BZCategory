@@ -99,7 +99,7 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param btn 按钮
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithButton:(UIButton *)btn withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithButton:(UIButton *)btn callBack:(UITextFieldBZAddCallBack)callBack;
 
 /**
  给TextField右视图添加按钮
@@ -108,7 +108,7 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithButton:(UIButton *)btn andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithButton:(UIButton *)btn andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack;
 
 /**
  给TextField右视图添加按钮，按钮图片使用传入图片名称
@@ -116,7 +116,7 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param imageName 图片名称
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithImageName:(NSString *)imageName withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithImageName:(NSString *)imageName callBack:(UITextFieldBZAddCallBack)callBack;
 
 /**
  给TextField右视图添加按钮，按钮图片使用传入图片名称
@@ -125,7 +125,7 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithImageName:(NSString *)imageName andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithImageName:(NSString *)imageName andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack;
 
 /**
  给TextField右视图添加按钮
@@ -134,7 +134,7 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param selectedImageName 选中状态图片名称
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName callBack:(UITextFieldBZAddCallBack)callBack;
 
 /**
  给TextField右视图添加按钮
@@ -144,6 +144,6 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  @param zoom 按钮图片缩放比例 0~1
  @param callBack 按钮点击回调
  */
-- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName andZoom:(CGFloat)zoom withCallBack:(UITextFieldBZAddCallBack)callBack;
+- (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack;
 
 @end
