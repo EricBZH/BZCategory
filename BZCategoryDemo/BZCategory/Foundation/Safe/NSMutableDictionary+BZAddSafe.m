@@ -20,8 +20,8 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzlingSysMethod:@"bz_removeObjectForKey:" sysClassString:@"NSMutableDictionary" toCustMethod:@"removeObjectForKey:" targetClassString:@"__NSDictionaryM"];
-        [self swizzlingSysMethod:@"bz_setObject:forKey:" sysClassString:@"NSMutableDictionary" toCustMethod:@"setObject:forKey:" targetClassString:@"__NSDictionaryM"];
+        [self bz_swizzlingSysMethod:@"bz_removeObjectForKey:" sysClassString:@"NSMutableDictionary" toCustMethod:@"removeObjectForKey:" targetClassString:@"__NSDictionaryM"];
+        [self bz_swizzlingSysMethod:@"bz_setObject:forKey:" sysClassString:@"NSMutableDictionary" toCustMethod:@"setObject:forKey:" targetClassString:@"__NSDictionaryM"];
     });
     
 }

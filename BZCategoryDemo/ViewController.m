@@ -40,10 +40,10 @@
     m1.name = @"张三";
     
     //通过NSUserDefaults写入自定义类型对象到本地
-    [userDefault bz_SetObject:m1 forKey:key];
+    [userDefault bz_setObject:m1 forKey:key];
     
     //通过NSUserDefaults从本地取出自定义类型对象
-    TestModel *m2 = [userDefault bz_ObjectForKey:key];
+    TestModel *m2 = [userDefault bz_objectForKey:key];
     NSLog(@"%@",m2.name);
 }
 
@@ -187,11 +187,11 @@
 
     NSMutableArray<TestModel*> *mArr = [[NSMutableArray alloc] initWithArray:arr];
 
-    NSDictionary <TestModel *,TestModel *>*arrDict = [arr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
+    NSDictionary <TestModel *,TestModel *>*arrDict = [arr bz_linkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
         return value;
     }];
 
-    NSDictionary <NSNumber *,TestModel *>*mArrDict = [mArr bz_LinkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
+    NSDictionary <NSNumber *,TestModel *>*mArrDict = [mArr bz_linkItemsWithGenerateKeyBlock:^id<NSCopying>(TestModel *value) {
         return value.name;
     }];
 

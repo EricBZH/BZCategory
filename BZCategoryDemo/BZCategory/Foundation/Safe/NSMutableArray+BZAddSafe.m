@@ -17,22 +17,22 @@
 #else
 
 + (void)load{
-    
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzlingSysMethod:@"addObject:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_addObject:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"addObject:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_addObject:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"insertObject:atIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_insertObject:atIndex:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"insertObject:atIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_insertObject:atIndex:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"removeObjectAtIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_removeObjectAtIndex:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"removeObjectAtIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_removeObjectAtIndex:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"replaceObjectAtIndex:withObject:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_safe_replaceObjectAtIndex:withObject:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"replaceObjectAtIndex:withObject:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_safe_replaceObjectAtIndex:withObject:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"removeObjectsAtIndexes:" sysClassString:@"NSMutableArray" toCustMethod:@"bz_removeObjectsAtIndexes:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"removeObjectsAtIndexes:" sysClassString:@"NSMutableArray" toCustMethod:@"bz_removeObjectsAtIndexes:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"removeObjectsInRange:" sysClassString:@"NSMutableArray" toCustMethod:@"bz_removeObjectsInRange:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"removeObjectsInRange:" sysClassString:@"NSMutableArray" toCustMethod:@"bz_removeObjectsInRange:" targetClassString:@"NSMutableArray"];
         
-        [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_objectAtIndex:" targetClassString:@"NSMutableArray"];
+        [self bz_swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArrayM" toCustMethod:@"bz_objectAtIndex:" targetClassString:@"NSMutableArray"];
         
     });
     

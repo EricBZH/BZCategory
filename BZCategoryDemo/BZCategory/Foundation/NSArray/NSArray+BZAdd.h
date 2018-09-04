@@ -27,6 +27,6 @@ typedef id<NSCopying>(^GenerateKeyBlock)(ObjectType value);
  @param generateKeyBlock 通过传入模型返回指定的key
  @return 模型字典
  */
-- (NSDictionary <id, ObjectType> *)bz_LinkItemsWithGenerateKeyBlock:(GenerateKeyBlock)generateKeyBlock;
+- (NSDictionary <id, ObjectType> *)bz_linkItemsWithGenerateKeyBlock:(GenerateKeyBlock)generateKeyBlock;
 
 @end

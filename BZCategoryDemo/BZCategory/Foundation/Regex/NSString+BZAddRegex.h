@@ -15,47 +15,47 @@
 /**
  邮箱验证
  */
-- (BOOL)bz_IsValidEmail;
+- (BOOL)bz_isValidEmail;
 
 /**
  手机号验证
  */
-- (BOOL)bz_IsValidPhoneNum;
+- (BOOL)bz_isValidPhoneNum;
 
 /**
  车牌号验证
  */
-- (BOOL)bz_IsValidCarNo;
+- (BOOL)bz_isValidCarNo;
 
 /**
  网址验证
  */
-- (BOOL)bz_IsValidUrl;
+- (BOOL)bz_isValidUrl;
 
 /**
  邮政编码验证
  */
-- (BOOL)bz_IsValidPostalcode;
+- (BOOL)bz_isValidPostalcode;
 
 /**
  纯汉字验证
  */
-- (BOOL)bz_IsValidChinese;
+- (BOOL)bz_isValidChinese;
 
 /**
  IP格式验证，xxx.xxx.xxx.xxx
  */
-- (BOOL)bz_IsValidIP;
+- (BOOL)bz_isValidIP;
 
 /**
  身份证验证
  */
-- (BOOL)bz_IsValidIdCardNum;
+- (BOOL)bz_isValidIdCardNum;
 
 /**
  工商税号验证
  */
-- (BOOL)bz_IsValidTaxNo;
+- (BOOL)bz_isValidTaxNo;
 
 /**
  @brief     是否符合最小长度、最长长度，是否包含中文,首字母是否可以为数字
@@ -65,7 +65,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    验证成功返回YES, 否则返回NO
  */
-- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_isValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
         firstCannotBeDigtal:(BOOL)firstCannotBeDigtal;
@@ -81,7 +81,7 @@
  @param     firstCannotBeDigtal 判断首字母不能为数字 默认NO 不判断
  @return    正则验证成功返回YES, 否则返回NO
  */
-- (BOOL)bz_IsValidWithMinLenth:(NSInteger)minLenth
+- (BOOL)bz_isValidWithMinLenth:(NSInteger)minLenth
                    maxLenth:(NSInteger)maxLenth
              containChinese:(BOOL)containChinese
               containDigtal:(BOOL)containDigtal
@@ -94,11 +94,11 @@
 /**
  去掉两端空格和换行符
  */
-- (NSString *)bz_StringByTrimmingBlank;
+- (NSString *)bz_stringByTrimmingBlank;
 
 /**
  去掉html格式
  */
-- (NSString *)bz_RemoveHtmlFormat;
+- (NSString *)bz_removeHtmlFormat;
 
 @end

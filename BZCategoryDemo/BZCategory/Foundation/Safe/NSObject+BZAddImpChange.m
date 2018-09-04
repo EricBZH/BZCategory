@@ -11,7 +11,7 @@
 
 @implementation NSObject (BZAddImpChange)
 
-+ (void)swizzlingSysMethod:(NSString *)systemMethodString sysClassString:(NSString *)systemClassString toCustMethod:(NSString *)custMethodString targetClassString:(NSString *)targetClassString{
++ (void)bz_swizzlingSysMethod:(NSString *)systemMethodString sysClassString:(NSString *)systemClassString toCustMethod:(NSString *)custMethodString targetClassString:(NSString *)targetClassString{
     
     //系统方法IMP
     Method sysMethod = class_getInstanceMethod(NSClassFromString(systemClassString), NSSelectorFromString(systemMethodString));

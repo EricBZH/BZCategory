@@ -20,19 +20,18 @@
     
     static dispatch_once_t onceDispatch;
     dispatch_once(&onceDispatch, ^{
-        [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArray0" toCustMethod:@"bz_objectAtIndex1:" targetClassString:@"NSArray"];
-        [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArrayI" toCustMethod:@"bz_objectAtIndex2:" targetClassString:@"NSArray"];
-        [self swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSSingleObjectArrayI" toCustMethod:@"bz_objectAtIndex3:" targetClassString:@"NSArray"];
+        [self bz_swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArray0" toCustMethod:@"bz_objectAtIndex1:" targetClassString:@"NSArray"];
+        [self bz_swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSArrayI" toCustMethod:@"bz_objectAtIndex2:" targetClassString:@"NSArray"];
+        [self bz_swizzlingSysMethod:@"objectAtIndex:" sysClassString:@"__NSSingleObjectArrayI" toCustMethod:@"bz_objectAtIndex3:" targetClassString:@"NSArray"];
         
-        [self swizzlingSysMethod:@"initWithObjects:count:" sysClassString:@"__NSPlaceholderArray" toCustMethod:@"initWithObjects_bz:count:" targetClassString:@"NSArray"];
+        [self bz_swizzlingSysMethod:@"initWithObjects:count:" sysClassString:@"__NSPlaceholderArray" toCustMethod:@"initWithObjects_bz:count:" targetClassString:@"NSArray"];
         
-        [self swizzlingSysMethod:@"arrayByAddingObject:" sysClassString:@"__NSArrayI" toCustMethod:@"arrayByAddingObject_bz:" targetClassString:@"NSArray"];
+        [self bz_swizzlingSysMethod:@"arrayByAddingObject:" sysClassString:@"__NSArrayI" toCustMethod:@"arrayByAddingObject_bz:" targetClassString:@"NSArray"];
     });
     
 }
 
 #endif
-
 
 - (id)bz_objectAtIndex1:(NSUInteger)index{
     //判断数组是否越界

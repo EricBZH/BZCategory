@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.7"
+  s.version      = "1.1.8"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -28,31 +28,33 @@ Pod::Spec.new do |s|
     # ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
 
     ss.subspec 'NSArray'         do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
-      end
+    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
+    	end
 
     ss.subspec 'NSUserDefaults'  do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
-      end
+    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
+    	end
 
     ss.subspec 'Regex'           do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
-      end
+    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
+    	end
 
     ss.subspec 'Safe'            do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Safe/*.{h,m}"
-      end
+    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Safe/*.{h,m}"
+    	end
 
     ss.subspec 'UnicodeReadable' do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
-      end
-
-    ss.subspec 'UITextField'     do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UITextField/*.{h,m}"
-      end
+    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
+    	end
 
   end
 
+  s.subspec 'UIKit' do |ss|
+
+  	ss.subspec 'UITextField' do |sss|
+  		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UITextField/*.{h,m}"
+  		end
+  end
   
 
 end

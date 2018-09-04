@@ -7,7 +7,6 @@
 //
 
 #import "NSUserDefaults+BZAdd.h"
-#import <objc/runtime.h>
 
 @implementation NSUserDefaults (BZAdd)
 
@@ -17,7 +16,7 @@
  @param value 自定义对象
  @param defaultName key
  */
-- (void)bz_SetObject:(id<NSCoding>)value forKey:(NSString *)defaultName
+- (void)bz_setObject:(id<NSCoding>)value forKey:(NSString *)defaultName
 {
     NSData *customObjectData = [NSKeyedArchiver archivedDataWithRootObject:value];
 
@@ -30,7 +29,7 @@
  @param defaultName key
  @return 自定义对象
  */
-- (id)bz_ObjectForKey:(NSString *)defaultName
+- (id)bz_objectForKey:(NSString *)defaultName
 {
     NSData *customObjectData = [self objectForKey:defaultName];
 

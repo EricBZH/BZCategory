@@ -195,6 +195,7 @@
 			children = (
 				0715F633210C318D00797E81 /* BZCategory.h */,
 				076E4B91210C2F7400EC857B /* Foundation */,
+				40FFF2292134E8C500BFFF88 /* UIKit */,
 			);
 			path = BZCategory;
 			sourceTree = "<group>";
@@ -207,7 +208,6 @@
 				07E5D6852115B7C200BFC9AE /* Regex */,
 				07E5D6842115B78200BFC9AE /* Safe */,
 				07E5D6832115B6E900BFC9AE /* UnicodeReadable */,
-				40341E43212C236700820D1B /* UITextField */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -285,6 +285,14 @@
 				40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */,
 			);
 			path = NSArray;
+			sourceTree = "<group>";
+		};
+		40FFF2292134E8C500BFFF88 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				40341E43212C236700820D1B /* UITextField */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		BE283B184B6133CF7B2EF2BB /* Frameworks */ = {

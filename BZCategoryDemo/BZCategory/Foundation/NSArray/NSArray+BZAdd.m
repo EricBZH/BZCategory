@@ -16,7 +16,7 @@
  @param generateKeyBlock 通过传入模型返回指定的key
  @return 模型字典
  */
-- (NSDictionary *)bz_LinkItemsWithGenerateKeyBlock:(GenerateKeyBlock)generateKeyBlock
+- (NSDictionary *)bz_linkItemsWithGenerateKeyBlock:(GenerateKeyBlock)generateKeyBlock
 {
     NSMutableDictionary *mDict = [NSMutableDictionary dictionary];
 

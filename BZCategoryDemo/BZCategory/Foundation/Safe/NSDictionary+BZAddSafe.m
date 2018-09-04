@@ -18,7 +18,7 @@
 
 + (void)load{
     
-    [self swizzlingSysMethod:@"initWithObjects:forKeys:count:" sysClassString:@"__NSPlaceholderDictionary" toCustMethod:@"initWithObjects_bz:forKeys:count:" targetClassString:@"NSDictionary"];
+    [self bz_swizzlingSysMethod:@"initWithObjects:forKeys:count:" sysClassString:@"__NSPlaceholderDictionary" toCustMethod:@"initWithObjects_bz:forKeys:count:" targetClassString:@"NSDictionary"];
     
 }
 

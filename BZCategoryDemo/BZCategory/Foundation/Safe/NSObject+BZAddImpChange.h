@@ -18,6 +18,6 @@
  @param custMethodString 自定义方法名
  @param targetClassString 目标实现类名
  */
-+ (void)swizzlingSysMethod:(NSString *)systemMethodString sysClassString:(NSString *)systemClassString toCustMethod:(NSString *)custMethodString targetClassString:(NSString *)targetClassString;
++ (void)bz_swizzlingSysMethod:(NSString *)systemMethodString sysClassString:(NSString *)systemClassString toCustMethod:(NSString *)custMethodString targetClassString:(NSString *)targetClassString;
 
 @end
