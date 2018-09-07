@@ -44,7 +44,7 @@
             timeOut--;
         }
     });
-    
+    dispatch_resume(_timer);
 }
 
 /**
