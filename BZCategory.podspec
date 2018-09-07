@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.1.8"
+  s.version      = "1.1.9"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -50,6 +50,10 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'UIKit' do |ss|
+
+  	ss.subspec 'UIButton'    do |sss|
+  		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIButton/*.{h,m}"
+  		end
 
   	ss.subspec 'UITextField' do |sss|
   		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UITextField/*.{h,m}"
