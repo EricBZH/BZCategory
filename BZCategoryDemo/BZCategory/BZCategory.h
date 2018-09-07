@@ -13,5 +13,6 @@
 #import "NSString+BZAddRegex.h"
 #import "NSArray+BZAdd.h"
 #import "UITextField+BZAdd.h"
+#import "UIButton+BZAddCountdown.h"
 
 #endif /* BZCategory_h */
