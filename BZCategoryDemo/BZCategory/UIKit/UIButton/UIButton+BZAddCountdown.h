@@ -8,15 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 倒计时剩余时间回调
+
+ @param timeLeft 剩余时间
+ @param btn 按钮
+ */
+typedef void(^BZAddCountdownCallBack)(NSInteger timeLeft, UIButton *btn);
+
 @interface UIButton (BZAddCountdown)
 
 /**
  按钮添加倒计时
 
  @param countdownTime 倒计时时间
- @param normalTitle 正常状态显示文本
- @param waitTittle 等待倒计时结束显示文本
+ @param callBack 回调
  */
-- (void)bz_addCountdownTime:(NSInteger)countdownTime andNormalTitle:(NSString *)normalTitle andWaitTittle:(NSString *)waitTittle;
+- (void)bz_addCountdownTime:(NSInteger)countdownTime callBack:(BZAddCountdownCallBack)callBack;
 
 @end
