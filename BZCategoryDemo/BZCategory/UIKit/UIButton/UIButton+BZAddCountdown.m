@@ -27,7 +27,9 @@
     dispatch_source_set_timer(_timer, dispatch_walltime(NULL, 0), 1.0 * NSEC_PER_SEC, 0); //每秒执行
     
     dispatch_source_set_event_handler(_timer, ^{
-        if (timeOut <= 0) {//倒计时结束，关闭
+        if (timeOut <= 0) { //倒计时结束，关闭
+            dispatch_source_cancel(_timer);
+            
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 if (callBack) {
                     callBack(timeOut,self);
@@ -37,7 +39,7 @@
                 
                 self.enabled = YES;
             }];
-        }else{
+        } else {
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
                 if (callBack) {
                     callBack(timeOut,self);
@@ -52,6 +54,7 @@
             timeOut--;
         }
     });
+    
     dispatch_resume(_timer);
 }
 
