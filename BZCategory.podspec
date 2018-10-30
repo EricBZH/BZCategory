@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.2.3"
+  s.version      = "1.3.0"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -30,6 +30,10 @@ Pod::Spec.new do |s|
     ss.subspec 'NSArray'         do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
     	end
+
+    ss.subspec 'NSTimer'         do |sss|
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSTimer/*.{h,m}"
+      end
 
     ss.subspec 'NSUserDefaults'  do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"

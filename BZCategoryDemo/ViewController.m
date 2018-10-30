@@ -21,10 +21,10 @@
     [super viewDidLoad];
     
 //    [self testSetCustomModel];
-//
+
 //    [self testSafe];
     
-    [self testArrayToDict];
+//    [self testArrayToDict];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
@@ -199,4 +199,5 @@
     NSLog(@"%@",mArrDict);
 
 }
+
 @end

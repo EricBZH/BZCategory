@@ -27,6 +27,7 @@
 		07CA59D621291B50009EA5B2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA59D521291B50009EA5B2 /* TestModel.m */; };
 		07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */; };
 		40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40341E41212C236100820D1B /* UITextField+BZAdd.m */; };
+		4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */; };
 		40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */; };
 		40CD522D21425F5600CDB19C /* UIButton+BZAddCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CD522C21425F5600CDB19C /* UIButton+BZAddCountdown.m */; };
 		5471F873769CDCC7D286D419 /* libPods-BZCategoryDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B224736E8383B6BD6CBF6F0C /* libPods-BZCategoryDemo.a */; };
@@ -92,6 +93,8 @@
 		22DB8A87CDE65F26C796D67D /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		40341E40212C236100820D1B /* UITextField+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BZAdd.h"; sourceTree = "<group>"; };
 		40341E41212C236100820D1B /* UITextField+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BZAdd.m"; sourceTree = "<group>"; };
+		4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BZAdd.m"; sourceTree = "<group>"; };
+		4043917D21880B450008ACC4 /* NSTimer+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+BZAdd.h"; sourceTree = "<group>"; };
 		40A0E75A212536CE005AFFF5 /* NSArray+BZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+BZAdd.h"; sourceTree = "<group>"; };
 		40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BZAdd.m"; sourceTree = "<group>"; };
 		40CD522B21425F5600CDB19C /* UIButton+BZAddCountdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+BZAddCountdown.h"; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				40A0E756212535D4005AFFF5 /* NSArray */,
+				4043917B21880B450008ACC4 /* NSTimer */,
 				07E5D6862115B7D800BFC9AE /* NSUserDefaults */,
 				07E5D6852115B7C200BFC9AE /* Regex */,
 				07E5D6842115B78200BFC9AE /* Safe */,
@@ -279,6 +283,15 @@
 				40341E41212C236100820D1B /* UITextField+BZAdd.m */,
 			);
 			path = UITextField;
+			sourceTree = "<group>";
+		};
+		4043917B21880B450008ACC4 /* NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */,
+				4043917D21880B450008ACC4 /* NSTimer+BZAdd.h */,
+			);
+			path = NSTimer;
 			sourceTree = "<group>";
 		};
 		40A0E756212535D4005AFFF5 /* NSArray */ = {
@@ -472,6 +485,7 @@
 				40CD522D21425F5600CDB19C /* UIButton+BZAddCountdown.m in Sources */,
 				076E4BAE210C2F7400EC857B /* NSMutableArray+BZAddSafe.m in Sources */,
 				076E4B62210C2F3E00EC857B /* ViewController.m in Sources */,
+				4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */,
 				076E4BB0210C2F7400EC857B /* NSDictionary+BZAddSafe.m in Sources */,
 				076E4BA9210C2F7400EC857B /* NSArray+BZAddSafe.m in Sources */,
 				40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */,
