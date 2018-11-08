@@ -21,13 +21,18 @@
     [super viewDidLoad];
     
 //    [self testSetCustomModel];
-
+//
 //    [self testSafe];
-    
+//
 //    [self testArrayToDict];
+//
+//    [self testTimer];
+//
+//    [self testButtonCountDown];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
+
 /**
  测试NSUserDefault存储自定义对象
  */
@@ -198,6 +203,35 @@
     NSLog(@"%@",arrDict);
     NSLog(@"%@",mArrDict);
 
+}
+
+#pragma mark - 测试定时器
+
+/**
+ 测试定时器分类
+ */
+- (void)testTimer
+{
+    [NSTimer bz_scheduledTimerWithTimeInterval:1 repeats:YES userInfo:nil callBack:^(NSTimer * _Nonnull timer) {
+        NSLog(@"test timer...");
+    }];
+    
+    [NSTimer bz_scheduledTimerWithTimeInterval:1 timeOut:60 userInfo:nil callBack:^(NSTimer * _Nonnull timer, NSUInteger timeLeft) {
+        NSLog(@"%ld",(long)timeLeft);
+    }];
+}
+
+#pragma mark - 测试UIButton
+
+/**
+ 测试UIButton分类
+ */
+- (void)testButtonCountDown
+{
+    UIButton *btn = [[UIButton alloc] init];
+    [btn bz_addCountdownTime:60 callBack:^(NSInteger timeLeft, UIButton *btn) {
+        NSLog(@"%ld",(long)timeLeft);
+    }];
 }
 
 @end
