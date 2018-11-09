@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.3.1"
+  s.version      = "1.3.2"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -57,6 +57,7 @@ Pod::Spec.new do |s|
 
   	ss.subspec 'UIButton'    do |sss|
   		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIButton/*.{h,m}"
+  		sss.dependency "BZCategory/Foundation/NSTimer"
   		end
 
   	ss.subspec 'UITextField' do |sss|

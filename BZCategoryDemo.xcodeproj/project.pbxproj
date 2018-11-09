@@ -481,11 +481,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */,
 				076E4BAD210C2F7400EC857B /* NSArray+BZAddUnicodeReadable.m in Sources */,
 				40CD522D21425F5600CDB19C /* UIButton+BZAddCountdown.m in Sources */,
 				076E4BAE210C2F7400EC857B /* NSMutableArray+BZAddSafe.m in Sources */,
 				076E4B62210C2F3E00EC857B /* ViewController.m in Sources */,
-				4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */,
 				076E4BB0210C2F7400EC857B /* NSDictionary+BZAddSafe.m in Sources */,
 				076E4BA9210C2F7400EC857B /* NSArray+BZAddSafe.m in Sources */,
 				40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */,

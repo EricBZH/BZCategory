@@ -9,9 +9,6 @@
 #import "UIButton+BZAddCountdown.h"
 #import "NSTimer+BZAdd.h"
 
-#define NormalTitle @"please enter verfycode"
-#define WatingTitle @"time left"
-
 @implementation UIButton (BZAddCountdown)
 
 /**
