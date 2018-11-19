@@ -29,6 +29,8 @@
 //    [self testTimer];
 //
 //    [self testButtonCountDown];
+//
+    [self testString];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
@@ -232,6 +234,14 @@
     [btn bz_addCountdownTime:60 callBack:^(NSInteger timeLeft, UIButton *btn) {
         NSLog(@"%ld",(long)timeLeft);
     }];
+}
+
+#pragma mark - 测试字符串
+
+- (void)testString
+{
+    NSString *x = [[NSString stringWithFormat:@""] bz_placeholder:@"aabbccdd"];
+    NSLog(@"%@",x);
 }
 
 @end

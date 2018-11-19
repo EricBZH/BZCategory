@@ -11,6 +11,7 @@
 
 #import "NSUserDefaults+BZAdd.h"
 #import "NSString+BZAddRegex.h"
+#import "NSString+BZAdd.h"
 #import "NSArray+BZAdd.h"
 #import "NSTimer+BZAdd.h"
 #import "UITextField+BZAdd.h"

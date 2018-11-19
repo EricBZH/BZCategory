@@ -12,7 +12,6 @@
 
 ///姓名
 @property (copy,   nonatomic) NSString *name;
-
 ///索引
 @property (assign, nonatomic) NSInteger index;
 

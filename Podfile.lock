@@ -3,22 +3,28 @@ PODS:
     - MJExtension
     - YYModel
   - MJExtension (3.0.15.1)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
   - BZModel
+  - YYCategories
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BZModel
     - MJExtension
+    - YYCategories
     - YYModel
 
 SPEC CHECKSUMS:
   BZModel: 30e976f1c86fee801820435913bef95a27322bb3
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2bdfdb5dbead281ba9d0ad84eecc64993816d25b
+PODFILE CHECKSUM: 3236af79c6c81e44a57bcf1543517d6799f9de92
 
 COCOAPODS: 1.5.3

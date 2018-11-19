@@ -26,6 +26,7 @@
 		076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA2210C2F7400EC857B /* NSObject+BZAddImpChange.m */; };
 		07CA59D621291B50009EA5B2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA59D521291B50009EA5B2 /* TestModel.m */; };
 		07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */; };
+		40157CBC21A2BB6000D2BEFC /* NSString+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */; };
 		40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40341E41212C236100820D1B /* UITextField+BZAdd.m */; };
 		4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */; };
 		40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */; };
@@ -91,6 +92,8 @@
 		07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAddRegex.m"; sourceTree = "<group>"; };
 		07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAddRegex.h"; sourceTree = "<group>"; };
 		22DB8A87CDE65F26C796D67D /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		40157CBA21A2BB6000D2BEFC /* NSString+BZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAdd.h"; sourceTree = "<group>"; };
+		40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAdd.m"; sourceTree = "<group>"; };
 		40341E40212C236100820D1B /* UITextField+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BZAdd.h"; sourceTree = "<group>"; };
 		40341E41212C236100820D1B /* UITextField+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+BZAdd.m"; sourceTree = "<group>"; };
 		4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+BZAdd.m"; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				40A0E756212535D4005AFFF5 /* NSArray */,
+				40157CBD21A2BE7F00D2BEFC /* NSString */,
 				4043917B21880B450008ACC4 /* NSTimer */,
 				07E5D6862115B7D800BFC9AE /* NSUserDefaults */,
 				07E5D6852115B7C200BFC9AE /* Regex */,
@@ -276,6 +280,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		40157CBD21A2BE7F00D2BEFC /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				40157CBA21A2BB6000D2BEFC /* NSString+BZAdd.h */,
+				40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		40341E43212C236700820D1B /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,8 +301,8 @@
 		4043917B21880B450008ACC4 /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
-				4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */,
 				4043917D21880B450008ACC4 /* NSTimer+BZAdd.h */,
+				4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -499,6 +512,7 @@
 				076E4B5F210C2F3E00EC857B /* AppDelegate.m in Sources */,
 				076E4BB1210C2F7400EC857B /* NSSet+BZAddUnicodeReadable.m in Sources */,
 				076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */,
+				40157CBC21A2BB6000D2BEFC /* NSString+BZAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
