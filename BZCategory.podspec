@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.3.4"
+  s.version      = "1.4.0"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -22,51 +22,72 @@ Pod::Spec.new do |s|
   s.public_header_files = "BZCategoryDemo/BZCategory/BZCategory.h"
 
   s.dependency     "YYCategories"
+  s.dependency     "MBProgressHUD"
 
   s.subspec 'Foundation' do |ss|
 
-    # ss.source_files = "BZCategoryDemo/BZCategory/Foundation/*.{h,m}"
-
     ss.subspec 'NSArray'         do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
-    	end
+    end
 
     ss.subspec 'NSString'        do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSString/*.{h,m}"
-    	end
+    end
 
     ss.subspec 'NSTimer'         do |sss|
-        sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSTimer/*.{h,m}"
-        end
+      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSTimer/*.{h,m}"
+    end
 
     ss.subspec 'NSUserDefaults'  do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
-    	end
+    end
 
     ss.subspec 'Regex'           do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
-    	end
+    end
 
     ss.subspec 'Safe'            do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Safe/*.{h,m}"
-    	end
+    end
 
     ss.subspec 'UnicodeReadable' do |sss|
     	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/UnicodeReadable/*.{h,m}"
-    	end
+    end
 
   end
 
   s.subspec 'UIKit' do |ss|
 
-  	ss.subspec 'UIButton'    do |sss|
-  		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIButton/*.{h,m}"
-  		sss.dependency "BZCategory/Foundation/NSTimer"
-  		end
+  	ss.subspec 'UIButton'         do |sss|
 
-  	ss.subspec 'UITextField' do |sss|
-  		sss.source_files = "BZCategoryDemo/BZCategory/UIKit/UITextField/*.{h,m}"
-  		end
+      sss.subspec 'UIButton+BZAddCountdown'     do |ssss|
+        ssss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIButton/UIButton+BZAddCountdown/*.{h,m}"
+        # 依赖库本身的文件
+        sss.dependency "BZCategory/Foundation/NSTimer"
+      end
+
+  	end
+
+  	ss.subspec 'UITextField'      do |sss|
+
+      sss.subspec 'UITextField+BZAdd'           do |ssss|
+        ssss.source_files = "BZCategoryDemo/BZCategory/UIKit/UITextField/UITextField+BZAdd/*.{h,m}"
+      end
+  		
+  	end
+
+    ss.subspec 'UIViewController' do |sss|
+
+      sss.subspec 'UIViewController+BZAddHUD'   do |ssss|
+        ssss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIViewController/UIViewController+BZAddHUD/*.{h,m}"
+      end
+
+      sss.subspec 'UIViewController+BZAddToast' do |ssss|
+        ssss.source_files = "BZCategoryDemo/BZCategory/UIKit/UIViewController/UIViewController+BZAddToast/*.{h,m}"
+      end
+
+    end
+
   end
   
 

@@ -30,7 +30,11 @@
 //
 //    [self testButtonCountDown];
 //
-    [self testString];
+//    [self testString];
+//    
+//    [self testToast];
+//
+    [self testHUD];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
@@ -242,6 +246,25 @@
 {
     NSString *x = [[NSString stringWithFormat:@""] bz_placeholder:@"aabbccdd"];
     NSLog(@"%@",x);
+}
+
+#pragma mark - 测试Toast
+
+- (void)testToast
+{
+    [self toastWithMessage:@"弹出提示" callBack:^{
+        [self toastWithMessage:@"提示隐藏"];
+    }];
+}
+
+#pragma mark - 测试HUD
+
+- (void)testHUD
+{
+    [self showHUDWithMessage:@"测试弹出菊花"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self hideHud];
+    });
 }
 
 @end

@@ -14,7 +14,10 @@
 #import "NSString+BZAdd.h"
 #import "NSArray+BZAdd.h"
 #import "NSTimer+BZAdd.h"
+
 #import "UITextField+BZAdd.h"
 #import "UIButton+BZAddCountdown.h"
+#import "UIViewController+BZAddToast.h"
+#import "UIViewController+BZAddHUD.h"
 
 #endif /* BZCategory_h */

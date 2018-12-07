@@ -26,6 +26,8 @@
 		076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E4BA2210C2F7400EC857B /* NSObject+BZAddImpChange.m */; };
 		07CA59D621291B50009EA5B2 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CA59D521291B50009EA5B2 /* TestModel.m */; };
 		07E5D6892115BC8A00BFC9AE /* NSString+BZAddRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */; };
+		4001D42321BA27D1007BAD9F /* UIViewController+BZAddToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4001D41F21BA27D0007BAD9F /* UIViewController+BZAddToast.m */; };
+		4001D42421BA27D1007BAD9F /* UIViewController+BZAddHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4001D42121BA27D1007BAD9F /* UIViewController+BZAddHUD.m */; };
 		40157CBC21A2BB6000D2BEFC /* NSString+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */; };
 		40341E42212C236100820D1B /* UITextField+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 40341E41212C236100820D1B /* UITextField+BZAdd.m */; };
 		4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */; };
@@ -92,6 +94,10 @@
 		07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAddRegex.m"; sourceTree = "<group>"; };
 		07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAddRegex.h"; sourceTree = "<group>"; };
 		22DB8A87CDE65F26C796D67D /* Pods-BZCategoryDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZCategoryDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZCategoryDemo/Pods-BZCategoryDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4001D41E21BA27D0007BAD9F /* UIViewController+BZAddToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZAddToast.h"; sourceTree = "<group>"; };
+		4001D41F21BA27D0007BAD9F /* UIViewController+BZAddToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZAddToast.m"; sourceTree = "<group>"; };
+		4001D42121BA27D1007BAD9F /* UIViewController+BZAddHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BZAddHUD.m"; sourceTree = "<group>"; };
+		4001D42221BA27D1007BAD9F /* UIViewController+BZAddHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BZAddHUD.h"; sourceTree = "<group>"; };
 		40157CBA21A2BB6000D2BEFC /* NSString+BZAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+BZAdd.h"; sourceTree = "<group>"; };
 		40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+BZAdd.m"; sourceTree = "<group>"; };
 		40341E40212C236100820D1B /* UITextField+BZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+BZAdd.h"; sourceTree = "<group>"; };
@@ -280,6 +286,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4001D41C21BA2777007BAD9F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40DD2EB021BA4E420027917D /* UIViewController+BZAddHUD */,
+				40DD2EB121BA4E490027917D /* UIViewController+BZAddToast */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		40157CBD21A2BE7F00D2BEFC /* NSString */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +307,7 @@
 		40341E43212C236700820D1B /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
-				40341E40212C236100820D1B /* UITextField+BZAdd.h */,
-				40341E41212C236100820D1B /* UITextField+BZAdd.m */,
+				40DD2EB321BA514D0027917D /* UITextField+BZAdd */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -319,17 +333,53 @@
 		40CD522A21425F2600CDB19C /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
+				40DD2EB221BA4FC90027917D /* UIButton+BZAddCountdown */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		40DD2EB021BA4E420027917D /* UIViewController+BZAddHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4001D42221BA27D1007BAD9F /* UIViewController+BZAddHUD.h */,
+				4001D42121BA27D1007BAD9F /* UIViewController+BZAddHUD.m */,
+			);
+			path = "UIViewController+BZAddHUD";
+			sourceTree = "<group>";
+		};
+		40DD2EB121BA4E490027917D /* UIViewController+BZAddToast */ = {
+			isa = PBXGroup;
+			children = (
+				4001D41E21BA27D0007BAD9F /* UIViewController+BZAddToast.h */,
+				4001D41F21BA27D0007BAD9F /* UIViewController+BZAddToast.m */,
+			);
+			path = "UIViewController+BZAddToast";
+			sourceTree = "<group>";
+		};
+		40DD2EB221BA4FC90027917D /* UIButton+BZAddCountdown */ = {
+			isa = PBXGroup;
+			children = (
 				40CD522B21425F5600CDB19C /* UIButton+BZAddCountdown.h */,
 				40CD522C21425F5600CDB19C /* UIButton+BZAddCountdown.m */,
 			);
-			path = UIButton;
+			path = "UIButton+BZAddCountdown";
+			sourceTree = "<group>";
+		};
+		40DD2EB321BA514D0027917D /* UITextField+BZAdd */ = {
+			isa = PBXGroup;
+			children = (
+				40341E40212C236100820D1B /* UITextField+BZAdd.h */,
+				40341E41212C236100820D1B /* UITextField+BZAdd.m */,
+			);
+			path = "UITextField+BZAdd";
 			sourceTree = "<group>";
 		};
 		40FFF2292134E8C500BFFF88 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				40CD522A21425F2600CDB19C /* UIButton */,
 				40341E43212C236700820D1B /* UITextField */,
+				40CD522A21425F2600CDB19C /* UIButton */,
+				4001D41C21BA2777007BAD9F /* UIViewController */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -496,6 +546,7 @@
 			files = (
 				4043917E21880B450008ACC4 /* NSTimer+BZAdd.m in Sources */,
 				076E4BAD210C2F7400EC857B /* NSArray+BZAddUnicodeReadable.m in Sources */,
+				4001D42421BA27D1007BAD9F /* UIViewController+BZAddHUD.m in Sources */,
 				40CD522D21425F5600CDB19C /* UIButton+BZAddCountdown.m in Sources */,
 				076E4BAE210C2F7400EC857B /* NSMutableArray+BZAddSafe.m in Sources */,
 				076E4B62210C2F3E00EC857B /* ViewController.m in Sources */,
@@ -510,6 +561,7 @@
 				40A0E75C212536CE005AFFF5 /* NSArray+BZAdd.m in Sources */,
 				076E4B6D210C2F3F00EC857B /* main.m in Sources */,
 				076E4B5F210C2F3E00EC857B /* AppDelegate.m in Sources */,
+				4001D42321BA27D1007BAD9F /* UIViewController+BZAddToast.m in Sources */,
 				076E4BB1210C2F7400EC857B /* NSSet+BZAddUnicodeReadable.m in Sources */,
 				076E4BB2210C2F7400EC857B /* NSObject+BZAddImpChange.m in Sources */,
 				40157CBC21A2BB6000D2BEFC /* NSString+BZAdd.m in Sources */,
