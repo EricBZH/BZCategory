@@ -14,16 +14,18 @@
 /**
  添加占位字符串
  
+ @param orignString 源字符串
  @param placeholder 占位字符串
- @return 如果字符串为空，则返回占位字符串
+ @return 如果源字符串为空，则返回占位字符串
  */
-- (NSString *)bz_placeholder:(NSString *)placeholder
++ (NSString *)bz_orignString:(NSString * _Nullable)orignString
+                 placeholder:(NSString *)placeholder
 {
-    if ([self isNotBlank] == NO) {
+    if ([orignString isNotBlank] == NO) {
         return placeholder;
-    }else {
-        return self;
     }
+    
+    return orignString;
 }
 
 @end

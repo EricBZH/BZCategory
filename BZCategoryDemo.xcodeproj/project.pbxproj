@@ -222,7 +222,6 @@
 				40157CBD21A2BE7F00D2BEFC /* NSString */,
 				4043917B21880B450008ACC4 /* NSTimer */,
 				07E5D6862115B7D800BFC9AE /* NSUserDefaults */,
-				07E5D6852115B7C200BFC9AE /* Regex */,
 				07E5D6842115B78200BFC9AE /* Safe */,
 				07E5D6832115B6E900BFC9AE /* UnicodeReadable */,
 			);
@@ -259,20 +258,10 @@
 			path = Safe;
 			sourceTree = "<group>";
 		};
-		07E5D6852115B7C200BFC9AE /* Regex */ = {
-			isa = PBXGroup;
-			children = (
-				07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */,
-				07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */,
-			);
-			path = Regex;
-			sourceTree = "<group>";
-		};
 		07E5D6862115B7D800BFC9AE /* NSUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				076E4BA4210C2F7400EC857B /* NSUserDefaults+BZAdd.h */,
-				076E4B9B210C2F7400EC857B /* NSUserDefaults+BZAdd.m */,
+				40A6B87B21BE12C10084961A /* NSUserDefaults+BZAdd */,
 			);
 			path = NSUserDefaults;
 			sourceTree = "<group>";
@@ -298,8 +287,8 @@
 		40157CBD21A2BE7F00D2BEFC /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				40157CBA21A2BB6000D2BEFC /* NSString+BZAdd.h */,
-				40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */,
+				40A6B87821BE125D0084961A /* NSString+BZAdd */,
+				40A6B87721BE12510084961A /* NSString+BZAddRegex */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -315,8 +304,7 @@
 		4043917B21880B450008ACC4 /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
-				4043917D21880B450008ACC4 /* NSTimer+BZAdd.h */,
-				4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */,
+				40A6B87921BE12670084961A /* NSTimer+BZAdd */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -324,10 +312,54 @@
 		40A0E756212535D4005AFFF5 /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
+				40A6B87A21BE12B70084961A /* NSArray+BZAdd */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		40A6B87721BE12510084961A /* NSString+BZAddRegex */ = {
+			isa = PBXGroup;
+			children = (
+				07E5D6882115BC8A00BFC9AE /* NSString+BZAddRegex.h */,
+				07E5D6872115BC8A00BFC9AE /* NSString+BZAddRegex.m */,
+			);
+			path = "NSString+BZAddRegex";
+			sourceTree = "<group>";
+		};
+		40A6B87821BE125D0084961A /* NSString+BZAdd */ = {
+			isa = PBXGroup;
+			children = (
+				40157CBA21A2BB6000D2BEFC /* NSString+BZAdd.h */,
+				40157CBB21A2BB6000D2BEFC /* NSString+BZAdd.m */,
+			);
+			path = "NSString+BZAdd";
+			sourceTree = "<group>";
+		};
+		40A6B87921BE12670084961A /* NSTimer+BZAdd */ = {
+			isa = PBXGroup;
+			children = (
+				4043917D21880B450008ACC4 /* NSTimer+BZAdd.h */,
+				4043917C21880B450008ACC4 /* NSTimer+BZAdd.m */,
+			);
+			path = "NSTimer+BZAdd";
+			sourceTree = "<group>";
+		};
+		40A6B87A21BE12B70084961A /* NSArray+BZAdd */ = {
+			isa = PBXGroup;
+			children = (
 				40A0E75A212536CE005AFFF5 /* NSArray+BZAdd.h */,
 				40A0E75B212536CE005AFFF5 /* NSArray+BZAdd.m */,
 			);
-			path = NSArray;
+			path = "NSArray+BZAdd";
+			sourceTree = "<group>";
+		};
+		40A6B87B21BE12C10084961A /* NSUserDefaults+BZAdd */ = {
+			isa = PBXGroup;
+			children = (
+				076E4BA4210C2F7400EC857B /* NSUserDefaults+BZAdd.h */,
+				076E4B9B210C2F7400EC857B /* NSUserDefaults+BZAdd.m */,
+			);
+			path = "NSUserDefaults+BZAdd";
 			sourceTree = "<group>";
 		};
 		40CD522A21425F2600CDB19C /* UIButton */ = {

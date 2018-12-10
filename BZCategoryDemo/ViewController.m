@@ -30,11 +30,11 @@
 //
 //    [self testButtonCountDown];
 //
-//    [self testString];
-//    
+    [self testString];
+//
 //    [self testToast];
 //
-    [self testHUD];
+//    [self testHUD];
 }
 
 #pragma mark - 测试NSUserDefault存储自定义对象
@@ -244,8 +244,11 @@
 
 - (void)testString
 {
-    NSString *x = [[NSString stringWithFormat:@""] bz_placeholder:@"aabbccdd"];
-    NSLog(@"%@",x);
+    NSString *x = nil;
+    NSString *y = [NSString bz_orignString:x placeholder:@"aabbccdd"];
+    
+    NSLog(@"x=%@",x);
+    NSLog(@"y=%@",y);
 }
 
 #pragma mark - 测试Toast

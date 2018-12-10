@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "BZCategory"
-  s.version      = "1.4.0"
+  s.version      = "1.4.1"
   s.summary      = "项目通用分类库。"
 
   s.description  = <<-DESC
@@ -27,23 +27,39 @@ Pod::Spec.new do |s|
   s.subspec 'Foundation' do |ss|
 
     ss.subspec 'NSArray'         do |sss|
-    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/*.{h,m}"
+
+    	sss.subspec 'NSArray+BZAdd' do        |ssss|
+    		ssss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSArray/NSArray+BZAdd/*.{h,m}"
+    	end
+
     end
 
     ss.subspec 'NSString'        do |sss|
-    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSString/*.{h,m}"
+ 
+    	sss.subspec 'NSString+BZAdd' do       |ssss|
+    		ssss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSString/NSString+BZAdd/*.{h,m}"
+    	end
+
+    	sss.subspec 'NSString+BZAddRegex' do  |ssss|
+    		ssss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSString/NSString+BZAddRegex/*.{h,m}"
+    	end
+    	
     end
 
     ss.subspec 'NSTimer'         do |sss|
-      sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSTimer/*.{h,m}"
+
+    	sss.subspec 'NSTimer+BZAdd' do        |ssss|
+    		ssss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSTimer/NSTimer+BZAdd/*.{h,m}"
+    	end
+      
     end
 
     ss.subspec 'NSUserDefaults'  do |sss|
-    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/*.{h,m}"
-    end
 
-    ss.subspec 'Regex'           do |sss|
-    	sss.source_files = "BZCategoryDemo/BZCategory/Foundation/Regex/*.{h,m}"
+    	sss.subspec 'NSUserDefaults+BZAdd' do |ssss|
+    		sss.source_files = "BZCategoryDemo/BZCategory/Foundation/NSUserDefaults/NSUserDefaults+BZAdd/*.{h,m}"
+    	end
+
     end
 
     ss.subspec 'Safe'            do |sss|
