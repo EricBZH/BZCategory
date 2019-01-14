@@ -233,6 +233,16 @@
     [self bz_addRightViewWithButton:btn andZoom:zoom callBack:callBack];
 }
 
+#pragma mark - Destory
+
+/**
+ 清除右视图
+ */
+- (void)bz_destoryRightView
+{
+    self.rightView = nil;
+}
+
 #pragma mark - 私有方法
 
 #pragma mark - Data

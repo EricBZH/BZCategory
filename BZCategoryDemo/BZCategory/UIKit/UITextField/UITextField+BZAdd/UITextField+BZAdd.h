@@ -146,4 +146,11 @@ typedef void(^UITextFieldBZAddCallBack)(UIButton *btn);
  */
 - (void)bz_addRightViewWithNormalImageName:(NSString *)normalImageName andSelectedImageName:(NSString *)selectedImageName andZoom:(CGFloat)zoom callBack:(UITextFieldBZAddCallBack)callBack;
 
+#pragma mark - Destory
+
+/**
+ 清除右视图
+ */
+- (void)bz_destoryRightView;
+
 @end
