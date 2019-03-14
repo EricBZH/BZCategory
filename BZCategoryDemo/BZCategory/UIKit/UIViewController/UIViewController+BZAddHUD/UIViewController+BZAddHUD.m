@@ -8,14 +8,6 @@
 
 #import "UIViewController+BZAddHUD.h"
 #import <objc/runtime.h>
-#import "MBProgressHUD.h"
-
-@interface UIViewController ()
-
-///hud
-@property (strong, nonatomic) MBProgressHUD *hud;
-
-@end
 
 @implementation UIViewController (BZAddHUD)
 

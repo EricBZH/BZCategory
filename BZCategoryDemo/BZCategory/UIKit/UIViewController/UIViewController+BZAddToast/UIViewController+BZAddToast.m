@@ -8,11 +8,20 @@
 
 #import "UIViewController+BZAddToast.h"
 #import <objc/runtime.h>
-#import "MBProgressHUD.h"
 
 #define HideHudAfterDelay 2
 
 @implementation UIViewController (BZAddToast)
+
+- (MBProgressHUD *)hud
+{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setHud:(MBProgressHUD *)hud
+{
+    objc_setAssociatedObject(self, @selector(hud), hud, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
 #pragma mark - Method
 
@@ -76,8 +85,6 @@
                        afterDelay:(NSTimeInterval)afterDelay
                          callBack:(UIViewControllerToastFinishBlock)callBack
 {
-    CGFloat rate = 200.f / 554.f;
-    
     UIView *view = nil;
     
     if (self.navigationController.view != nil) {
@@ -89,7 +96,6 @@
     
     hud.mode = MBProgressHUDModeText;
     hud.label.text = message;
-    hud.offset = CGPointMake(0.f, self.view.frame.size.height * rate);
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(afterDelay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [hud hideAnimated:YES];

@@ -13,10 +13,18 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (BZAddHUD)
+
+#pragma mark - Property
+
+///hud
+@property (strong, nonatomic) MBProgressHUD *hud;
+
+#pragma mark - Method
 
 /**
  弹出菊花，不自动消失
