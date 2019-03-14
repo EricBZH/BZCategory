@@ -92,13 +92,14 @@
     }else{
         view = self.view;
     }
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
-    hud.mode = MBProgressHUDModeText;
-    hud.label.text = message;
+    self.hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    
+    self.hud.mode = MBProgressHUDModeText;
+    self.hud.label.text = message;
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(afterDelay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [hud hideAnimated:YES];
+        [self.hud hideAnimated:YES];
         
         if (callBack) {
             callBack();
