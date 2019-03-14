@@ -21,9 +21,9 @@
  
  @param message 消息文本
  */
-- (void)toastWithMessage:(NSString *)message
+- (void)bz_toastWithMessage:(NSString *)message
 {
-    [self toastWithMessage:message callBack:nil];
+    [self bz_toastWithMessage:message callBack:nil];
 }
 
 /**
@@ -32,10 +32,10 @@
  @param message 消息文本
  @param afterDelay 延时时间
  */
-- (void)toastWithMessage:(NSString *)message
+- (void)bz_toastWithMessage:(NSString *)message
               afterDelay:(NSTimeInterval)afterDelay
 {
-    [self toastWithMessage:message afterDelay:afterDelay callBack:nil];
+    [self bz_toastWithMessage:message afterDelay:afterDelay callBack:nil];
 }
 
 /**
@@ -44,10 +44,10 @@
  @param message 消息文本
  @param callBack 消失回调
  */
-- (void)toastWithMessage:(NSString *)message
+- (void)bz_toastWithMessage:(NSString *)message
                 callBack:(UIViewControllerToastFinishBlock _Nullable)callBack
 {
-    [self toastWithMessage:message afterDelay:HideHudAfterDelay callBack:callBack];
+    [self bz_toastWithMessage:message afterDelay:HideHudAfterDelay callBack:callBack];
 }
 
 /**
@@ -57,7 +57,7 @@
  @param afterDelay 延时时间
  @param callBack 消失回调
  */
-- (void)toastWithMessage:(NSString *)message
+- (void)bz_toastWithMessage:(NSString *)message
               afterDelay:(NSTimeInterval)afterDelay
                 callBack:(UIViewControllerToastFinishBlock _Nullable)callBack
 {

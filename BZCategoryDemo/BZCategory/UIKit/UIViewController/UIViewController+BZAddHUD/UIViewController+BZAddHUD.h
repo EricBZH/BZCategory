@@ -21,19 +21,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  弹出菊花，不自动消失
  */
-- (void)showHUD;
+- (void)bz_showHUD;
 
 /**
  弹出带文本菊花，不自动消失
  
  @param message 消息文本
  */
-- (void)showHUDWithMessage:(NSString * _Nullable)message;
+- (void)bz_showHUDWithMessage:(NSString * _Nullable)message;
 
 /**
  隐藏菊花
  */
-- (void)hideHud;
+- (void)bz_hideHud;
 
 @end
 

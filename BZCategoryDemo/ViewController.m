@@ -255,8 +255,8 @@
 
 - (void)testToast
 {
-    [self toastWithMessage:@"弹出提示" callBack:^{
-        [self toastWithMessage:@"提示隐藏"];
+    [self bz_toastWithMessage:@"弹出提示" callBack:^{
+        [self bz_toastWithMessage:@"提示隐藏"];
     }];
 }
 
@@ -264,9 +264,9 @@
 
 - (void)testHUD
 {
-    [self showHUDWithMessage:@"测试弹出菊花"];
+    [self bz_showHUDWithMessage:@"测试弹出菊花"];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self hideHud];
+        [self bz_hideHud];
     });
 }
 

@@ -25,10 +25,10 @@ typedef void(^UIViewControllerToastFinishBlock)(void);
 
 /**
  底部弹出提示框，自动消失，默认2秒
-
+ 
  @param message 消息文本
  */
-- (void)toastWithMessage:(NSString *)message;
+- (void)bz_toastWithMessage:(NSString *)message;
 
 /**
  底部弹出提示框，自动消失
@@ -36,8 +36,8 @@ typedef void(^UIViewControllerToastFinishBlock)(void);
  @param message 消息文本
  @param afterDelay 延时时间
  */
-- (void)toastWithMessage:(NSString *)message
-              afterDelay:(NSTimeInterval)afterDelay;
+- (void)bz_toastWithMessage:(NSString *)message
+                 afterDelay:(NSTimeInterval)afterDelay;
 
 /**
  底部弹出提示框，自动消失，默认2秒
@@ -45,8 +45,8 @@ typedef void(^UIViewControllerToastFinishBlock)(void);
  @param message 消息文本
  @param callBack 消失回调
  */
-- (void)toastWithMessage:(NSString *)message
-                callBack:(UIViewControllerToastFinishBlock _Nullable)callBack;
+- (void)bz_toastWithMessage:(NSString *)message
+                   callBack:(UIViewControllerToastFinishBlock _Nullable)callBack;
 
 /**
  底部弹出提示框，自动消失
@@ -55,7 +55,7 @@ typedef void(^UIViewControllerToastFinishBlock)(void);
  @param afterDelay 延时时间
  @param callBack 消失回调
  */
-- (void)toastWithMessage:(NSString *)message
+- (void)bz_toastWithMessage:(NSString *)message
               afterDelay:(NSTimeInterval)afterDelay
                 callBack:(UIViewControllerToastFinishBlock _Nullable)callBack;
 

@@ -34,9 +34,9 @@
 /**
  弹出菊花，不自动消失
  */
-- (void)showHUD
+- (void)bz_showHUD
 {
-    [self showHUDWithMessage:nil];
+    [self bz_showHUDWithMessage:nil];
 }
 
 /**
@@ -44,7 +44,7 @@
  
  @param message 消息文本
  */
-- (void)showHUDWithMessage:(NSString * _Nullable)message
+- (void)bz_showHUDWithMessage:(NSString * _Nullable)message
 {
     if ([NSThread currentThread].isMainThread) {
         [self configureShowHUDWithMessage:message];
@@ -58,7 +58,7 @@
 /**
  隐藏菊花
  */
-- (void)hideHud
+- (void)bz_hideHud
 {
     if ([NSThread currentThread].isMainThread) {
         [self configureHideHud];
